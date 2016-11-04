@@ -1,0 +1,374 @@
+==3039== Memcheck, a memory error detector
+==3039== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3039== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3039== Command: ./TestDarwin
+==3039== 
+Running main() from gtest_main.cc
+[==========] Running 126 tests from 30 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from Instruction_Constructor
+[ RUN      ] Instruction_Constructor.test_1
+[       OK ] Instruction_Constructor.test_1 (15 ms)
+[ RUN      ] Instruction_Constructor.test_2
+[       OK ] Instruction_Constructor.test_2 (2 ms)
+[ RUN      ] Instruction_Constructor.test_3
+[       OK ] Instruction_Constructor.test_3 (2 ms)
+[ RUN      ] Instruction_Constructor.test_4
+[       OK ] Instruction_Constructor.test_4 (2 ms)
+[ RUN      ] Instruction_Constructor.test_5
+[       OK ] Instruction_Constructor.test_5 (2 ms)
+[ RUN      ] Instruction_Constructor.test_6
+[       OK ] Instruction_Constructor.test_6 (3 ms)
+[----------] 6 tests from Instruction_Constructor (47 ms total)
+
+[----------] 3 tests from Instruction_is_control
+[ RUN      ] Instruction_is_control.test_1
+[       OK ] Instruction_is_control.test_1 (3 ms)
+[ RUN      ] Instruction_is_control.test_2
+[       OK ] Instruction_is_control.test_2 (2 ms)
+[ RUN      ] Instruction_is_control.test_3
+[       OK ] Instruction_is_control.test_3 (2 ms)
+[----------] 3 tests from Instruction_is_control (10 ms total)
+
+[----------] 3 tests from Instruction_is_valid_number
+[ RUN      ] Instruction_is_valid_number.test_1
+[       OK ] Instruction_is_valid_number.test_1 (4 ms)
+[ RUN      ] Instruction_is_valid_number.test_2
+[       OK ] Instruction_is_valid_number.test_2 (4 ms)
+[ RUN      ] Instruction_is_valid_number.test_3
+[       OK ] Instruction_is_valid_number.test_3 (4 ms)
+[----------] 3 tests from Instruction_is_valid_number (14 ms total)
+
+[----------] 6 tests from Species_Constructor
+[ RUN      ] Species_Constructor.test_1
+[       OK ] Species_Constructor.test_1 (5 ms)
+[ RUN      ] Species_Constructor.test_2
+[       OK ] Species_Constructor.test_2 (3 ms)
+[ RUN      ] Species_Constructor.test_3
+[       OK ] Species_Constructor.test_3 (3 ms)
+[ RUN      ] Species_Constructor.test_4
+[       OK ] Species_Constructor.test_4 (4 ms)
+[ RUN      ] Species_Constructor.test_5
+[       OK ] Species_Constructor.test_5 (3 ms)
+[ RUN      ] Species_Constructor.test_6
+[       OK ] Species_Constructor.test_6 (3 ms)
+[----------] 6 tests from Species_Constructor (30 ms total)
+
+[----------] 3 tests from Species_equal
+[ RUN      ] Species_equal.test_1
+[       OK ] Species_equal.test_1 (4 ms)
+[ RUN      ] Species_equal.test_2
+[       OK ] Species_equal.test_2 (3 ms)
+[ RUN      ] Species_equal.test_3
+[       OK ] Species_equal.test_3 (5 ms)
+[----------] 3 tests from Species_equal (15 ms total)
+
+[----------] 3 tests from Species_not_equal
+[ RUN      ] Species_not_equal.test_1
+[       OK ] Species_not_equal.test_1 (5 ms)
+[ RUN      ] Species_not_equal.test_2
+[       OK ] Species_not_equal.test_2 (4 ms)
+[ RUN      ] Species_not_equal.test_3
+[       OK ] Species_not_equal.test_3 (3 ms)
+[----------] 3 tests from Species_not_equal (16 ms total)
+
+[----------] 3 tests from Species_get_instruction
+[ RUN      ] Species_get_instruction.test_1
+[       OK ] Species_get_instruction.test_1 (15 ms)
+[ RUN      ] Species_get_instruction.test_2
+[       OK ] Species_get_instruction.test_2 (8 ms)
+[ RUN      ] Species_get_instruction.test_3
+[       OK ] Species_get_instruction.test_3 (54 ms)
+[----------] 3 tests from Species_get_instruction (81 ms total)
+
+[----------] 3 tests from Species_add_instruction
+[ RUN      ] Species_add_instruction.test_1
+[       OK ] Species_add_instruction.test_1 (4 ms)
+[ RUN      ] Species_add_instruction.test_2
+[       OK ] Species_add_instruction.test_2 (7 ms)
+[ RUN      ] Species_add_instruction.test_3
+[       OK ] Species_add_instruction.test_3 (6 ms)
+[----------] 3 tests from Species_add_instruction (22 ms total)
+
+[----------] 3 tests from Species_is_valid_line
+[ RUN      ] Species_is_valid_line.test_1
+[       OK ] Species_is_valid_line.test_1 (4 ms)
+[ RUN      ] Species_is_valid_line.test_2
+[       OK ] Species_is_valid_line.test_2 (7 ms)
+[ RUN      ] Species_is_valid_line.test_3
+[       OK ] Species_is_valid_line.test_3 (4 ms)
+[----------] 3 tests from Species_is_valid_line (18 ms total)
+
+[----------] 6 tests from Creature_Constructor
+[ RUN      ] Creature_Constructor.test_1
+[       OK ] Creature_Constructor.test_1 (3 ms)
+[ RUN      ] Creature_Constructor.test_2
+[       OK ] Creature_Constructor.test_2 (8 ms)
+[ RUN      ] Creature_Constructor.test_3
+[       OK ] Creature_Constructor.test_3 (3 ms)
+[ RUN      ] Creature_Constructor.test_4
+[       OK ] Creature_Constructor.test_4 (2 ms)
+[ RUN      ] Creature_Constructor.test_5
+[       OK ] Creature_Constructor.test_5 (3 ms)
+[ RUN      ] Creature_Constructor.test_6
+[       OK ] Creature_Constructor.test_6 (3 ms)
+[----------] 6 tests from Creature_Constructor (27 ms total)
+
+[----------] 3 tests from Creature_change_into
+[ RUN      ] Creature_change_into.test_1
+[       OK ] Creature_change_into.test_1 (10 ms)
+[ RUN      ] Creature_change_into.test_2
+[       OK ] Creature_change_into.test_2 (3 ms)
+[ RUN      ] Creature_change_into.test_3
+[       OK ] Creature_change_into.test_3 (4 ms)
+[----------] 3 tests from Creature_change_into (20 ms total)
+
+[----------] 3 tests from Creature_not_completed_turn
+[ RUN      ] Creature_not_completed_turn.test_1
+[       OK ] Creature_not_completed_turn.test_1 (3 ms)
+[ RUN      ] Creature_not_completed_turn.test_2
+[       OK ] Creature_not_completed_turn.test_2 (4 ms)
+[ RUN      ] Creature_not_completed_turn.test_3
+[       OK ] Creature_not_completed_turn.test_3 (2 ms)
+[----------] 3 tests from Creature_not_completed_turn (12 ms total)
+
+[----------] 4 tests from Creature_turn_left
+[ RUN      ] Creature_turn_left.test_1
+[       OK ] Creature_turn_left.test_1 (4 ms)
+[ RUN      ] Creature_turn_left.test_2
+[       OK ] Creature_turn_left.test_2 (3 ms)
+[ RUN      ] Creature_turn_left.test_3
+[       OK ] Creature_turn_left.test_3 (3 ms)
+[ RUN      ] Creature_turn_left.test_4
+[       OK ] Creature_turn_left.test_4 (3 ms)
+[----------] 4 tests from Creature_turn_left (17 ms total)
+
+[----------] 4 tests from Creature_turn_right
+[ RUN      ] Creature_turn_right.test_1
+[       OK ] Creature_turn_right.test_1 (3 ms)
+[ RUN      ] Creature_turn_right.test_2
+[       OK ] Creature_turn_right.test_2 (3 ms)
+[ RUN      ] Creature_turn_right.test_3
+[       OK ] Creature_turn_right.test_3 (3 ms)
+[ RUN      ] Creature_turn_right.test_4
+[       OK ] Creature_turn_right.test_4 (3 ms)
+[----------] 4 tests from Creature_turn_right (17 ms total)
+
+[----------] 2 tests from Creature_turn_finished
+[ RUN      ] Creature_turn_finished.test_1
+[       OK ] Creature_turn_finished.test_1 (3 ms)
+[ RUN      ] Creature_turn_finished.test_2
+[       OK ] Creature_turn_finished.test_2 (3 ms)
+[----------] 2 tests from Creature_turn_finished (8 ms total)
+
+[----------] 1 test from Creature_turn_finised
+[ RUN      ] Creature_turn_finised.test_1
+[       OK ] Creature_turn_finised.test_1 (3 ms)
+[----------] 1 test from Creature_turn_finised (4 ms total)
+
+[----------] 3 tests from Creature_turn_restart
+[ RUN      ] Creature_turn_restart.test_1
+[       OK ] Creature_turn_restart.test_1 (4 ms)
+[ RUN      ] Creature_turn_restart.test_2
+[       OK ] Creature_turn_restart.test_2 (4 ms)
+[ RUN      ] Creature_turn_restart.test_3
+[       OK ] Creature_turn_restart.test_3 (4 ms)
+[----------] 3 tests from Creature_turn_restart (15 ms total)
+
+[----------] 3 tests from Creature_reset_counter
+[ RUN      ] Creature_reset_counter.test_1
+[       OK ] Creature_reset_counter.test_1 (3 ms)
+[ RUN      ] Creature_reset_counter.test_2
+[       OK ] Creature_reset_counter.test_2 (3 ms)
+[ RUN      ] Creature_reset_counter.test_3
+[       OK ] Creature_reset_counter.test_3 (3 ms)
+[----------] 3 tests from Creature_reset_counter (12 ms total)
+
+[----------] 6 tests from Darwin_Constructor
+[ RUN      ] Darwin_Constructor.test_1
+[       OK ] Darwin_Constructor.test_1 (27 ms)
+[ RUN      ] Darwin_Constructor.test_2
+[       OK ] Darwin_Constructor.test_2 (3 ms)
+[ RUN      ] Darwin_Constructor.test_3
+[       OK ] Darwin_Constructor.test_3 (3 ms)
+[ RUN      ] Darwin_Constructor.test_4
+[       OK ] Darwin_Constructor.test_4 (3 ms)
+[ RUN      ] Darwin_Constructor.test_5
+[       OK ] Darwin_Constructor.test_5 (7507 ms)
+[ RUN      ] Darwin_Constructor.test_6
+[       OK ] Darwin_Constructor.test_6 (22 ms)
+[----------] 6 tests from Darwin_Constructor (7575 ms total)
+
+[----------] 5 tests from Darwin_place
+[ RUN      ] Darwin_place.test_1
+[       OK ] Darwin_place.test_1 (6 ms)
+[ RUN      ] Darwin_place.test_2
+[       OK ] Darwin_place.test_2 (16 ms)
+[ RUN      ] Darwin_place.test_3
+[       OK ] Darwin_place.test_3 (5 ms)
+[ RUN      ] Darwin_place.test_4
+[       OK ] Darwin_place.test_4 (5 ms)
+[ RUN      ] Darwin_place.test_5
+[       OK ] Darwin_place.test_5 (6 ms)
+[----------] 5 tests from Darwin_place (47 ms total)
+
+[----------] 4 tests from Darwin_is_valid
+[ RUN      ] Darwin_is_valid.test_1
+[       OK ] Darwin_is_valid.test_1 (8 ms)
+[ RUN      ] Darwin_is_valid.test_2
+[       OK ] Darwin_is_valid.test_2 (8 ms)
+[ RUN      ] Darwin_is_valid.test_3
+[       OK ] Darwin_is_valid.test_3 (4 ms)
+[ RUN      ] Darwin_is_valid.test_4
+[       OK ] Darwin_is_valid.test_4 (5 ms)
+[----------] 4 tests from Darwin_is_valid (31 ms total)
+
+[----------] 6 tests from Darwin_is_wall
+[ RUN      ] Darwin_is_wall.test_1
+[       OK ] Darwin_is_wall.test_1 (4 ms)
+[ RUN      ] Darwin_is_wall.test_2
+[       OK ] Darwin_is_wall.test_2 (3 ms)
+[ RUN      ] Darwin_is_wall.test_3
+[       OK ] Darwin_is_wall.test_3 (3 ms)
+[ RUN      ] Darwin_is_wall.test_4
+[       OK ] Darwin_is_wall.test_4 (3 ms)
+[ RUN      ] Darwin_is_wall.test_5
+[       OK ] Darwin_is_wall.test_5 (3 ms)
+[ RUN      ] Darwin_is_wall.test_6
+[       OK ] Darwin_is_wall.test_6 (3 ms)
+[----------] 6 tests from Darwin_is_wall (25 ms total)
+
+[----------] 4 tests from Darwin_is_creature
+[ RUN      ] Darwin_is_creature.test_1
+[       OK ] Darwin_is_creature.test_1 (5 ms)
+[ RUN      ] Darwin_is_creature.test_2
+[       OK ] Darwin_is_creature.test_2 (4 ms)
+[ RUN      ] Darwin_is_creature.test_3
+[       OK ] Darwin_is_creature.test_3 (5 ms)
+[ RUN      ] Darwin_is_creature.test_4
+[       OK ] Darwin_is_creature.test_4 (4 ms)
+[----------] 4 tests from Darwin_is_creature (23 ms total)
+
+[----------] 3 tests from Darwin_is_enemy
+[ RUN      ] Darwin_is_enemy.test_1
+[       OK ] Darwin_is_enemy.test_1 (6 ms)
+[ RUN      ] Darwin_is_enemy.test_2
+[       OK ] Darwin_is_enemy.test_2 (6 ms)
+[ RUN      ] Darwin_is_enemy.test_3
+[       OK ] Darwin_is_enemy.test_3 (4 ms)
+[----------] 3 tests from Darwin_is_enemy (20 ms total)
+
+[----------] 6 tests from Darwin_hop
+[ RUN      ] Darwin_hop.test_1
+[       OK ] Darwin_hop.test_1 (16 ms)
+[ RUN      ] Darwin_hop.test_2
+[       OK ] Darwin_hop.test_2 (8 ms)
+[ RUN      ] Darwin_hop.test_3
+[       OK ] Darwin_hop.test_3 (9 ms)
+[ RUN      ] Darwin_hop.test_4
+[       OK ] Darwin_hop.test_4 (9 ms)
+[ RUN      ] Darwin_hop.test_5
+[       OK ] Darwin_hop.test_5 (5 ms)
+[ RUN      ] Darwin_hop.test_6
+[       OK ] Darwin_hop.test_6 (5 ms)
+[----------] 6 tests from Darwin_hop (59 ms total)
+
+[----------] 3 tests from Darwin_infect
+[ RUN      ] Darwin_infect.test_1
+[       OK ] Darwin_infect.test_1 (11 ms)
+[ RUN      ] Darwin_infect.test_2
+[       OK ] Darwin_infect.test_2 (8 ms)
+[ RUN      ] Darwin_infect.test_3
+[       OK ] Darwin_infect.test_3 (7 ms)
+[----------] 3 tests from Darwin_infect (30 ms total)
+
+[----------] 8 tests from Darwin_if_empty
+[ RUN      ] Darwin_if_empty.test_1
+[       OK ] Darwin_if_empty.test_1 (7 ms)
+[ RUN      ] Darwin_if_empty.test_2
+[       OK ] Darwin_if_empty.test_2 (7 ms)
+[ RUN      ] Darwin_if_empty.test_3
+[       OK ] Darwin_if_empty.test_3 (7 ms)
+[ RUN      ] Darwin_if_empty.test_4
+[       OK ] Darwin_if_empty.test_4 (7 ms)
+[ RUN      ] Darwin_if_empty.test_5
+[       OK ] Darwin_if_empty.test_5 (7 ms)
+[ RUN      ] Darwin_if_empty.test_6
+[       OK ] Darwin_if_empty.test_6 (7 ms)
+[ RUN      ] Darwin_if_empty.test_7
+[       OK ] Darwin_if_empty.test_7 (7 ms)
+[ RUN      ] Darwin_if_empty.test_8
+[       OK ] Darwin_if_empty.test_8 (7 ms)
+[----------] 8 tests from Darwin_if_empty (67 ms total)
+
+[----------] 8 tests from Darwin_if_wall
+[ RUN      ] Darwin_if_wall.test_1
+[       OK ] Darwin_if_wall.test_1 (8 ms)
+[ RUN      ] Darwin_if_wall.test_2
+[       OK ] Darwin_if_wall.test_2 (7 ms)
+[ RUN      ] Darwin_if_wall.test_3
+[       OK ] Darwin_if_wall.test_3 (7 ms)
+[ RUN      ] Darwin_if_wall.test_4
+[       OK ] Darwin_if_wall.test_4 (7 ms)
+[ RUN      ] Darwin_if_wall.test_5
+[       OK ] Darwin_if_wall.test_5 (7 ms)
+[ RUN      ] Darwin_if_wall.test_6
+[       OK ] Darwin_if_wall.test_6 (7 ms)
+[ RUN      ] Darwin_if_wall.test_7
+[       OK ] Darwin_if_wall.test_7 (7 ms)
+[ RUN      ] Darwin_if_wall.test_8
+[       OK ] Darwin_if_wall.test_8 (7 ms)
+[----------] 8 tests from Darwin_if_wall (64 ms total)
+
+[----------] 8 tests from Darwin_if_enemy
+[ RUN      ] Darwin_if_enemy.test_1
+[       OK ] Darwin_if_enemy.test_1 (9 ms)
+[ RUN      ] Darwin_if_enemy.test_2
+[       OK ] Darwin_if_enemy.test_2 (7 ms)
+[ RUN      ] Darwin_if_enemy.test_3
+[       OK ] Darwin_if_enemy.test_3 (9 ms)
+[ RUN      ] Darwin_if_enemy.test_4
+[       OK ] Darwin_if_enemy.test_4 (7 ms)
+[ RUN      ] Darwin_if_enemy.test_5
+[       OK ] Darwin_if_enemy.test_5 (9 ms)
+[ RUN      ] Darwin_if_enemy.test_6
+[       OK ] Darwin_if_enemy.test_6 (7 ms)
+[ RUN      ] Darwin_if_enemy.test_7
+[       OK ] Darwin_if_enemy.test_7 (9 ms)
+[ RUN      ] Darwin_if_enemy.test_8
+[       OK ] Darwin_if_enemy.test_8 (7 ms)
+[----------] 8 tests from Darwin_if_enemy (72 ms total)
+
+[----------] 3 tests from Darwin_turn
+[ RUN      ] Darwin_turn.test_1
+[       OK ] Darwin_turn.test_1 (6 ms)
+[ RUN      ] Darwin_turn.test_2
+[       OK ] Darwin_turn.test_2 (7 ms)
+[ RUN      ] Darwin_turn.test_3
+[       OK ] Darwin_turn.test_3 (11 ms)
+[----------] 3 tests from Darwin_turn (29 ms total)
+
+[----------] Global test environment tear-down
+[==========] 126 tests from 30 test cases ran. (8535 ms total)
+[  PASSED  ] 126 tests.
+==3039== 
+==3039== HEAP SUMMARY:
+==3039==     in use at exit: 72,704 bytes in 1 blocks
+==3039==   total heap usage: 4,269 allocs, 4,268 frees, 48,908,896 bytes allocated
+==3039== 
+==3039== LEAK SUMMARY:
+==3039==    definitely lost: 0 bytes in 0 blocks
+==3039==    indirectly lost: 0 bytes in 0 blocks
+==3039==      possibly lost: 0 bytes in 0 blocks
+==3039==    still reachable: 72,704 bytes in 1 blocks
+==3039==         suppressed: 0 bytes in 0 blocks
+==3039== Rerun with --leak-check=full to see details of leaked memory
+==3039== 
+==3039== For counts of detected and suppressed errors, rerun with: -v
+==3039== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:68.24% of 340
+Branches executed:59.38% of 389
+Taken at least once:44.22% of 389
+Calls executed:58.62% of 406
+Creating 'Darwin.c++.gcov'

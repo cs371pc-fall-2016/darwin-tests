@@ -1,0 +1,103 @@
+==8285== Memcheck, a memory error detector
+==8285== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==8285== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==8285== Command: ./TestDarwin
+==8285== 
+Running main() from gtest_main.cc
+[==========] Running 34 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from SpeciesFixture
+[ RUN      ] SpeciesFixture.ConstructorTest1
+[       OK ] SpeciesFixture.ConstructorTest1 (11 ms)
+[ RUN      ] SpeciesFixture.ConstructorTest2
+[       OK ] SpeciesFixture.ConstructorTest2 (17 ms)
+[ RUN      ] SpeciesFixture.ConstructorTest3
+[       OK ] SpeciesFixture.ConstructorTest3 (2 ms)
+[ RUN      ] SpeciesFixture.AddInstructionTest1
+[       OK ] SpeciesFixture.AddInstructionTest1 (6 ms)
+[ RUN      ] SpeciesFixture.AddInstructionTest2
+[       OK ] SpeciesFixture.AddInstructionTest2 (6 ms)
+[ RUN      ] SpeciesFixture.AddInstructionTest3
+[       OK ] SpeciesFixture.AddInstructionTest3 (3 ms)
+[ RUN      ] SpeciesFixture.CurrentInstructionTest1
+[       OK ] SpeciesFixture.CurrentInstructionTest1 (6 ms)
+[ RUN      ] SpeciesFixture.CurrentInstructionTest2
+[       OK ] SpeciesFixture.CurrentInstructionTest2 (37 ms)
+[ RUN      ] SpeciesFixture.CurrentInstructionTest3
+[       OK ] SpeciesFixture.CurrentInstructionTest3 (3 ms)
+[ RUN      ] SpeciesFixture.PrintTest1
+[       OK ] SpeciesFixture.PrintTest1 (5 ms)
+[ RUN      ] SpeciesFixture.PrintTest2
+[       OK ] SpeciesFixture.PrintTest2 (3 ms)
+[ RUN      ] SpeciesFixture.PrintTest3
+[       OK ] SpeciesFixture.PrintTest3 (4 ms)
+[----------] 12 tests from SpeciesFixture (111 ms total)
+
+[----------] 17 tests from CreatureFixture
+[ RUN      ] CreatureFixture.DefaultConstructorTest1
+[       OK ] CreatureFixture.DefaultConstructorTest1 (6 ms)
+[ RUN      ] CreatureFixture.DefaultConstructorTest2
+[       OK ] CreatureFixture.DefaultConstructorTest2 (4 ms)
+[ RUN      ] CreatureFixture.DefaultConstructorTest3
+[       OK ] CreatureFixture.DefaultConstructorTest3 (2 ms)
+[ RUN      ] CreatureFixture.ConstructorTest1
+[       OK ] CreatureFixture.ConstructorTest1 (2 ms)
+[ RUN      ] CreatureFixture.ConstructorTest2
+[       OK ] CreatureFixture.ConstructorTest2 (3 ms)
+[ RUN      ] CreatureFixture.ConstructorTest3
+[       OK ] CreatureFixture.ConstructorTest3 (3 ms)
+[ RUN      ] CreatureFixture.ClearStateTest1
+[       OK ] CreatureFixture.ClearStateTest1 (13 ms)
+[ RUN      ] CreatureFixture.ClearStateTest2
+[       OK ] CreatureFixture.ClearStateTest2 (3 ms)
+[ RUN      ] CreatureFixture.ClearStateTest3
+[       OK ] CreatureFixture.ClearStateTest3 (5 ms)
+[ RUN      ] CreatureFixture.PerformInstructionTests1
+[       OK ] CreatureFixture.PerformInstructionTests1 (20 ms)
+[ RUN      ] CreatureFixture.PerformInstructionTests2
+[       OK ] CreatureFixture.PerformInstructionTests2 (7 ms)
+[ RUN      ] CreatureFixture.PerformInstructionTests3
+[       OK ] CreatureFixture.PerformInstructionTests3 (15 ms)
+[ RUN      ] CreatureFixture.overloaded_print_tests
+[       OK ] CreatureFixture.overloaded_print_tests (6 ms)
+[ RUN      ] CreatureFixture.execute_instructions_tests
+[       OK ] CreatureFixture.execute_instructions_tests (5 ms)
+[ RUN      ] CreatureFixture.fetch_instruction_tests
+[       OK ] CreatureFixture.fetch_instruction_tests (6 ms)
+[ RUN      ] CreatureFixture.turn_right_tests
+[       OK ] CreatureFixture.turn_right_tests (4 ms)
+[ RUN      ] CreatureFixture.turn_left_tests
+[       OK ] CreatureFixture.turn_left_tests (4 ms)
+[----------] 17 tests from CreatureFixture (110 ms total)
+
+[----------] 5 tests from DarwinFixture
+[ RUN      ] DarwinFixture.inbound_tests
+[       OK ] DarwinFixture.inbound_tests (26 ms)
+[ RUN      ] DarwinFixture.constructor_tests
+[       OK ] DarwinFixture.constructor_tests (6 ms)
+[ RUN      ] DarwinFixture.add_creature_tests
+[       OK ] DarwinFixture.add_creature_tests (5 ms)
+[ RUN      ] DarwinFixture.execute_turn_tests
+[       OK ] DarwinFixture.execute_turn_tests (14 ms)
+[ RUN      ] DarwinFixture.overloaded_print_tests
+[       OK ] DarwinFixture.overloaded_print_tests (10 ms)
+[----------] 5 tests from DarwinFixture (62 ms total)
+
+[----------] Global test environment tear-down
+[==========] 34 tests from 3 test cases ran. (311 ms total)
+[  PASSED  ] 34 tests.
+==8285== 
+==8285== HEAP SUMMARY:
+==8285==     in use at exit: 0 bytes in 0 blocks
+==8285==   total heap usage: 892 allocs, 892 frees, 116,016 bytes allocated
+==8285== 
+==8285== All heap blocks were freed -- no leaks are possible
+==8285== 
+==8285== For counts of detected and suppressed errors, rerun with: -v
+==8285== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:97.10% of 138
+Branches executed:100.00% of 115
+Taken at least once:79.13% of 115
+Calls executed:89.16% of 83
+Creating 'Darwin.c++.gcov'
