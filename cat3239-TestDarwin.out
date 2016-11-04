@@ -1,0 +1,176 @@
+==2144== Memcheck, a memory error detector
+==2144== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==2144== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==2144== Command: ./TestDarwin
+==2144== 
+Running main() from gtest_main.cc
+[==========] Running 69 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from Species
+[ RUN      ] Species.default_constructor
+[       OK ] Species.default_constructor (12 ms)
+[ RUN      ] Species.constructor
+[       OK ] Species.constructor (3 ms)
+[ RUN      ] Species.species_print1
+[       OK ] Species.species_print1 (5 ms)
+[ RUN      ] Species.species_print2
+[       OK ] Species.species_print2 (2 ms)
+[ RUN      ] Species.species_print3
+[       OK ] Species.species_print3 (4 ms)
+[ RUN      ] Species.species_addInstruction1
+[       OK ] Species.species_addInstruction1 (12 ms)
+[ RUN      ] Species.species_addInstruction2
+[       OK ] Species.species_addInstruction2 (5 ms)
+[ RUN      ] Species.species_addInstruction3
+[       OK ] Species.species_addInstruction3 (11 ms)
+[ RUN      ] Species.species_getInstruction1
+[       OK ] Species.species_getInstruction1 (3 ms)
+[ RUN      ] Species.species_getInstruction2
+[       OK ] Species.species_getInstruction2 (4 ms)
+[ RUN      ] Species.species_getInstruction3
+[       OK ] Species.species_getInstruction3 (3 ms)
+[----------] 11 tests from Species (70 ms total)
+
+[----------] 27 tests from Creature
+[ RUN      ] Creature.default_constructor
+[       OK ] Creature.default_constructor (4 ms)
+[ RUN      ] Creature.constructor
+[       OK ] Creature.constructor (3 ms)
+[ RUN      ] Creature.creature_print1
+[       OK ] Creature.creature_print1 (2 ms)
+[ RUN      ] Creature.creature_print2
+[       OK ] Creature.creature_print2 (3 ms)
+[ RUN      ] Creature.creature_print3
+[       OK ] Creature.creature_print3 (2 ms)
+[ RUN      ] Creature.creature_getIntent1
+[       OK ] Creature.creature_getIntent1 (7 ms)
+[ RUN      ] Creature.creature_getIntent2
+[       OK ] Creature.creature_getIntent2 (4 ms)
+[ RUN      ] Creature.creature_getIntent3
+[       OK ] Creature.creature_getIntent3 (5 ms)
+[ RUN      ] Creature.creature_getIntent4
+[       OK ] Creature.creature_getIntent4 (10 ms)
+[ RUN      ] Creature.creature_getIntent_if_wall1
+[       OK ] Creature.creature_getIntent_if_wall1 (7 ms)
+[ RUN      ] Creature.creature_getIntent_if_wall2
+[       OK ] Creature.creature_getIntent_if_wall2 (5 ms)
+[ RUN      ] Creature.creature_getIntent_if_empty1
+[       OK ] Creature.creature_getIntent_if_empty1 (5 ms)
+[ RUN      ] Creature.creature_getIntent_if_empty2
+[       OK ] Creature.creature_getIntent_if_empty2 (4 ms)
+[ RUN      ] Creature.creature_getIntent_if_random1
+[       OK ] Creature.creature_getIntent_if_random1 (9 ms)
+[ RUN      ] Creature.creature_getIntent_if_random2
+[       OK ] Creature.creature_getIntent_if_random2 (5 ms)
+[ RUN      ] Creature.creature_getIntent_go
+[       OK ] Creature.creature_getIntent_go (5 ms)
+[ RUN      ] Creature.creature_inFront1
+[       OK ] Creature.creature_inFront1 (4 ms)
+[ RUN      ] Creature.creature_inFront2
+[       OK ] Creature.creature_inFront2 (3 ms)
+[ RUN      ] Creature.creature_inFront3
+[       OK ] Creature.creature_inFront3 (3 ms)
+[ RUN      ] Creature.creature_inFront4
+[       OK ] Creature.creature_inFront4 (3 ms)
+[ RUN      ] Creature.makeMove1
+[       OK ] Creature.makeMove1 (4 ms)
+[ RUN      ] Creature.makeMove2
+[       OK ] Creature.makeMove2 (4 ms)
+[ RUN      ] Creature.makeMove3
+[       OK ] Creature.makeMove3 (3 ms)
+[ RUN      ] Creature.makeMove4
+[       OK ] Creature.makeMove4 (4 ms)
+[ RUN      ] Creature.makeMove5
+[       OK ] Creature.makeMove5 (4 ms)
+[ RUN      ] Creature.makeMove6
+[       OK ] Creature.makeMove6 (6 ms)
+[ RUN      ] Creature.infectCreature1
+[       OK ] Creature.infectCreature1 (4 ms)
+[----------] 27 tests from Creature (125 ms total)
+
+[----------] 25 tests from Darwin
+[ RUN      ] Darwin.getIndex1
+[       OK ] Darwin.getIndex1 (15 ms)
+[ RUN      ] Darwin.getIndex2
+[       OK ] Darwin.getIndex2 (3 ms)
+[ RUN      ] Darwin.getIndex3
+[       OK ] Darwin.getIndex3 (2 ms)
+[ RUN      ] Darwin.getCoordinate1
+[       OK ] Darwin.getCoordinate1 (3 ms)
+[ RUN      ] Darwin.getCoordinate2
+[       OK ] Darwin.getCoordinate2 (3 ms)
+[ RUN      ] Darwin.getCoordinate3
+[       OK ] Darwin.getCoordinate3 (2 ms)
+[ RUN      ] Darwin.is_wall1
+[       OK ] Darwin.is_wall1 (3 ms)
+[ RUN      ] Darwin.is_wall2
+[       OK ] Darwin.is_wall2 (2 ms)
+[ RUN      ] Darwin.is_wall3
+[       OK ] Darwin.is_wall3 (2 ms)
+[ RUN      ] Darwin.isEmpty1
+[       OK ] Darwin.isEmpty1 (2 ms)
+[ RUN      ] Darwin.isEmpty2
+[       OK ] Darwin.isEmpty2 (2 ms)
+[ RUN      ] Darwin.isEmpty3
+[       OK ] Darwin.isEmpty3 (4 ms)
+[ RUN      ] Darwin.Darwin1
+[       OK ] Darwin.Darwin1 (2 ms)
+[ RUN      ] Darwin.Darwin2
+[       OK ] Darwin.Darwin2 (1 ms)
+[ RUN      ] Darwin.Darwin3
+[       OK ] Darwin.Darwin3 (10 ms)
+[ RUN      ] Darwin.Darwin4
+[       OK ] Darwin.Darwin4 (2 ms)
+[ RUN      ] Darwin.addCreature1
+[       OK ] Darwin.addCreature1 (4 ms)
+[ RUN      ] Darwin.addCreature2
+[       OK ] Darwin.addCreature2 (4 ms)
+[ RUN      ] Darwin.addCreature3
+[       OK ] Darwin.addCreature3 (4 ms)
+[ RUN      ] Darwin.darwin_print1
+[       OK ] Darwin.darwin_print1 (4 ms)
+[ RUN      ] Darwin.darwin_print2
+[       OK ] Darwin.darwin_print2 (5 ms)
+[ RUN      ] Darwin.darwin_print3
+[       OK ] Darwin.darwin_print3 (5 ms)
+[ RUN      ] Darwin.darwin_simulate1
+[       OK ] Darwin.darwin_simulate1 (23 ms)
+[ RUN      ] Darwin.darwin_simulate2
+[       OK ] Darwin.darwin_simulate2 (19 ms)
+[ RUN      ] Darwin.darwin_simulate3
+[       OK ] Darwin.darwin_simulate3 (15 ms)
+[----------] 25 tests from Darwin (149 ms total)
+
+[----------] 6 tests from Coordinate
+[ RUN      ] Coordinate.Coordinate_constructor_default1
+[       OK ] Coordinate.Coordinate_constructor_default1 (2 ms)
+[ RUN      ] Coordinate.Coordinate_constructor_default2
+[       OK ] Coordinate.Coordinate_constructor_default2 (1 ms)
+[ RUN      ] Coordinate.Coordinate
+[       OK ] Coordinate.Coordinate (3 ms)
+[ RUN      ] Coordinate.Coordinate_constructor_int1
+[       OK ] Coordinate.Coordinate_constructor_int1 (2 ms)
+[ RUN      ] Coordinate.Coordinate_constructor_int2
+[       OK ] Coordinate.Coordinate_constructor_int2 (2 ms)
+[ RUN      ] Coordinate.Coordinate_constructor_int3
+[       OK ] Coordinate.Coordinate_constructor_int3 (3 ms)
+[----------] 6 tests from Coordinate (13 ms total)
+
+[----------] Global test environment tear-down
+[==========] 69 tests from 4 test cases ran. (385 ms total)
+[  PASSED  ] 69 tests.
+==2144== 
+==2144== HEAP SUMMARY:
+==2144==     in use at exit: 0 bytes in 0 blocks
+==2144==   total heap usage: 2,797 allocs, 2,797 frees, 262,693 bytes allocated
+==2144== 
+==2144== All heap blocks were freed -- no leaks are possible
+==2144== 
+==2144== For counts of detected and suppressed errors, rerun with: -v
+==2144== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:98.77% of 163
+Branches executed:97.01% of 201
+Taken at least once:67.66% of 201
+Calls executed:87.59% of 137
+Creating 'Darwin.c++.gcov'

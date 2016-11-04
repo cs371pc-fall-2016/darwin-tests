@@ -1,0 +1,127 @@
+==598== Memcheck, a memory error detector
+==598== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==598== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==598== Command: ./TestDarwin
+==598==
+Running main() from gtest_main.cc
+[==========] Running 43 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from SpeciesFixture
+[ RUN      ] SpeciesFixture.species_constructor1
+[       OK ] SpeciesFixture.species_constructor1 (15 ms)
+[ RUN      ] SpeciesFixture.species_constructor2
+[       OK ] SpeciesFixture.species_constructor2 (2 ms)
+[ RUN      ] SpeciesFixture.species_constructor3
+[       OK ] SpeciesFixture.species_constructor3 (6 ms)
+[ RUN      ] SpeciesFixture.species_execute1
+[       OK ] SpeciesFixture.species_execute1 (4 ms)
+[ RUN      ] SpeciesFixture.species_execute2
+[       OK ] SpeciesFixture.species_execute2 (2 ms)
+[----------] 5 tests from SpeciesFixture (40 ms total)
+
+[----------] 32 tests from CreatureFixture
+[ RUN      ] CreatureFixture.creature_constructor1
+[       OK ] CreatureFixture.creature_constructor1 (3 ms)
+[ RUN      ] CreatureFixture.creature_constructor2
+[       OK ] CreatureFixture.creature_constructor2 (3 ms)
+[ RUN      ] CreatureFixture.creature_constructor3
+[       OK ] CreatureFixture.creature_constructor3 (3 ms)
+[ RUN      ] CreatureFixture.is_control_action1
+[       OK ] CreatureFixture.is_control_action1 (3 ms)
+[ RUN      ] CreatureFixture.is_control_action2
+[       OK ] CreatureFixture.is_control_action2 (2 ms)
+[ RUN      ] CreatureFixture.is_control_action3
+[       OK ] CreatureFixture.is_control_action3 (3 ms)
+[ RUN      ] CreatureFixture.take_turn1
+[       OK ] CreatureFixture.take_turn1 (3 ms)
+[ RUN      ] CreatureFixture.take_turn2
+[       OK ] CreatureFixture.take_turn2 (4 ms)
+[ RUN      ] CreatureFixture.take_turn3
+[       OK ] CreatureFixture.take_turn3 (3 ms)
+[ RUN      ] CreatureFixture.most_recent_turn1
+[       OK ] CreatureFixture.most_recent_turn1 (4 ms)
+[ RUN      ] CreatureFixture.most_recent_turn2
+[       OK ] CreatureFixture.most_recent_turn2 (3 ms)
+[ RUN      ] CreatureFixture.most_recent_turn3
+[       OK ] CreatureFixture.most_recent_turn3 (3 ms)
+[ RUN      ] CreatureFixture.control_jump1
+[       OK ] CreatureFixture.control_jump1 (4 ms)
+[ RUN      ] CreatureFixture.control_jump2
+[       OK ] CreatureFixture.control_jump2 (3 ms)
+[ RUN      ] CreatureFixture.control_jump3
+[       OK ] CreatureFixture.control_jump3 (3 ms)
+[ RUN      ] CreatureFixture.turn_left1
+[       OK ] CreatureFixture.turn_left1 (3 ms)
+[ RUN      ] CreatureFixture.turn_left2
+[       OK ] CreatureFixture.turn_left2 (3 ms)
+[ RUN      ] CreatureFixture.turn_left3
+[       OK ] CreatureFixture.turn_left3 (3 ms)
+[ RUN      ] CreatureFixture.turn_left4
+[       OK ] CreatureFixture.turn_left4 (3 ms)
+[ RUN      ] CreatureFixture.turn_right1
+[       OK ] CreatureFixture.turn_right1 (3 ms)
+[ RUN      ] CreatureFixture.turn_right2
+[       OK ] CreatureFixture.turn_right2 (3 ms)
+[ RUN      ] CreatureFixture.turn_right3
+[       OK ] CreatureFixture.turn_right3 (3 ms)
+[ RUN      ] CreatureFixture.turn_right4
+[       OK ] CreatureFixture.turn_right4 (3 ms)
+[ RUN      ] CreatureFixture.front1
+[       OK ] CreatureFixture.front1 (3 ms)
+[ RUN      ] CreatureFixture.front2
+[       OK ] CreatureFixture.front2 (3 ms)
+[ RUN      ] CreatureFixture.front3
+[       OK ] CreatureFixture.front3 (3 ms)
+[ RUN      ] CreatureFixture.is_enemy1
+[       OK ] CreatureFixture.is_enemy1 (6 ms)
+[ RUN      ] CreatureFixture.is_enemy2
+[       OK ] CreatureFixture.is_enemy2 (4 ms)
+[ RUN      ] CreatureFixture.is_enemy3
+[       OK ] CreatureFixture.is_enemy3 (4 ms)
+[ RUN      ] CreatureFixture.infected_by1
+[       OK ] CreatureFixture.infected_by1 (11 ms)
+[ RUN      ] CreatureFixture.infected_by2
+[       OK ] CreatureFixture.infected_by2 (5 ms)
+[ RUN      ] CreatureFixture.infected_by3
+[       OK ] CreatureFixture.infected_by3 (5 ms)
+[----------] 32 tests from CreatureFixture (119 ms total)
+
+[----------] 6 tests from DarwinFixture
+[ RUN      ] DarwinFixture.add_creature1
+[       OK ] DarwinFixture.add_creature1 (29 ms)
+[ RUN      ] DarwinFixture.add_creature2
+[       OK ] DarwinFixture.add_creature2 (10 ms)
+[ RUN      ] DarwinFixture.add_creature3
+[       OK ] DarwinFixture.add_creature3 (9 ms)
+[ RUN      ] DarwinFixture.run_num_turns1
+[       OK ] DarwinFixture.run_num_turns1 (10 ms)
+[ RUN      ] DarwinFixture.run_num_turns2
+[       OK ] DarwinFixture.run_num_turns2 (14 ms)
+[ RUN      ] DarwinFixture.run_num_turns3
+[       OK ] DarwinFixture.run_num_turns3 (51 ms)
+[----------] 6 tests from DarwinFixture (126 ms total)
+
+[----------] Global test environment tear-down
+[==========] 43 tests from 3 test cases ran. (322 ms total)
+[  PASSED  ] 43 tests.
+==598==
+==598== HEAP SUMMARY:
+==598==     in use at exit: 72,704 bytes in 1 blocks
+==598==   total heap usage: 1,749 allocs, 1,748 frees, 1,087,065 bytes allocated
+==598==
+==598== LEAK SUMMARY:
+==598==    definitely lost: 0 bytes in 0 blocks
+==598==    indirectly lost: 0 bytes in 0 blocks
+==598==      possibly lost: 0 bytes in 0 blocks
+==598==    still reachable: 72,704 bytes in 1 blocks
+==598==         suppressed: 0 bytes in 0 blocks
+==598== Rerun with --leak-check=full to see details of leaked memory
+==598==
+==598== For counts of detected and suppressed errors, rerun with: -v
+==598== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:83.80% of 142
+Branches executed:80.00% of 140
+Taken at least once:52.14% of 140
+Calls executed:61.94% of 134
+Creating 'Darwin.c++.gcov'

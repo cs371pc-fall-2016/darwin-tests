@@ -1,0 +1,155 @@
+==5351== Memcheck, a memory error detector
+==5351== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5351== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==5351== Command: ./TestDarwin
+==5351== 
+Running main() from gtest_main.cc
+[==========] Running 57 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 40 tests from Darwin
+[ RUN      ] Darwin.rcti1
+[       OK ] Darwin.rcti1 (23 ms)
+[ RUN      ] Darwin.rcti2
+[       OK ] Darwin.rcti2 (3 ms)
+[ RUN      ] Darwin.rcti3
+[       OK ] Darwin.rcti3 (2 ms)
+[ RUN      ] Darwin.findNextCreature1
+[       OK ] Darwin.findNextCreature1 (4 ms)
+[ RUN      ] Darwin.findNextCreature2
+[       OK ] Darwin.findNextCreature2 (19 ms)
+[ RUN      ] Darwin.findNextCreature3
+[       OK ] Darwin.findNextCreature3 (4 ms)
+[ RUN      ] Darwin.findCreatureIndex1
+[       OK ] Darwin.findCreatureIndex1 (5 ms)
+[ RUN      ] Darwin.findCreatureIndex2
+[       OK ] Darwin.findCreatureIndex2 (4 ms)
+[ RUN      ] Darwin.findCreatureIndex3
+[       OK ] Darwin.findCreatureIndex3 (4 ms)
+[ RUN      ] Darwin.findIndexFront1
+[       OK ] Darwin.findIndexFront1 (5 ms)
+[ RUN      ] Darwin.findIndexFront2
+[       OK ] Darwin.findIndexFront2 (4 ms)
+[ RUN      ] Darwin.findIndexFront3
+[       OK ] Darwin.findIndexFront3 (5 ms)
+[ RUN      ] Darwin.frontEmpty1
+[       OK ] Darwin.frontEmpty1 (4 ms)
+[ RUN      ] Darwin.frontEmpty2
+[       OK ] Darwin.frontEmpty2 (6 ms)
+[ RUN      ] Darwin.frontEmpty3
+[       OK ] Darwin.frontEmpty3 (4 ms)
+[ RUN      ] Darwin.doAction1
+[       OK ] Darwin.doAction1 (8 ms)
+[ RUN      ] Darwin.doAction2
+[       OK ] Darwin.doAction2 (6 ms)
+[ RUN      ] Darwin.doAction3
+[       OK ] Darwin.doAction3 (5 ms)
+[ RUN      ] Darwin.doAction4
+[       OK ] Darwin.doAction4 (6 ms)
+[ RUN      ] Darwin.hop1
+[       OK ] Darwin.hop1 (5 ms)
+[ RUN      ] Darwin.hop2
+[       OK ] Darwin.hop2 (6 ms)
+[ RUN      ] Darwin.hop3
+[       OK ] Darwin.hop3 (4 ms)
+[ RUN      ] Darwin.turn1
+[       OK ] Darwin.turn1 (4 ms)
+[ RUN      ] Darwin.turn2
+[       OK ] Darwin.turn2 (4 ms)
+[ RUN      ] Darwin.turn3
+[       OK ] Darwin.turn3 (4 ms)
+[ RUN      ] Darwin.infect1
+[       OK ] Darwin.infect1 (6 ms)
+[ RUN      ] Darwin.infect2
+[       OK ] Darwin.infect2 (5 ms)
+[ RUN      ] Darwin.infect3
+[       OK ] Darwin.infect3 (5 ms)
+[ RUN      ] Darwin.frontCreature1
+[       OK ] Darwin.frontCreature1 (6 ms)
+[ RUN      ] Darwin.frontCreature2
+[       OK ] Darwin.frontCreature2 (6 ms)
+[ RUN      ] Darwin.frontCreature3
+[       OK ] Darwin.frontCreature3 (4 ms)
+[ RUN      ] Darwin.construct1
+[       OK ] Darwin.construct1 (3 ms)
+[ RUN      ] Darwin.construct2
+[       OK ] Darwin.construct2 (3 ms)
+[ RUN      ] Darwin.construct3
+[       OK ] Darwin.construct3 (4 ms)
+[ RUN      ] Darwin.step1
+[       OK ] Darwin.step1 (11 ms)
+[ RUN      ] Darwin.step2
+[       OK ] Darwin.step2 (11 ms)
+[ RUN      ] Darwin.step3
+[       OK ] Darwin.step3 (7 ms)
+[ RUN      ] Darwin.addCreature1
+[       OK ] Darwin.addCreature1 (4 ms)
+[ RUN      ] Darwin.addCreature2
+[       OK ] Darwin.addCreature2 (4 ms)
+[ RUN      ] Darwin.addCreature3
+[       OK ] Darwin.addCreature3 (4 ms)
+[----------] 40 tests from Darwin (248 ms total)
+
+[----------] 8 tests from Creature
+[ RUN      ] Creature.constructor1
+[       OK ] Creature.constructor1 (2 ms)
+[ RUN      ] Creature.constructor2
+[       OK ] Creature.constructor2 (3 ms)
+[ RUN      ] Creature.constructor3
+[       OK ] Creature.constructor3 (3 ms)
+[ RUN      ] Creature.act1
+[       OK ] Creature.act1 (6 ms)
+[ RUN      ] Creature.act2
+[       OK ] Creature.act2 (5 ms)
+[ RUN      ] Creature.act3
+[       OK ] Creature.act3 (4 ms)
+[ RUN      ] Creature.infected1
+[       OK ] Creature.infected1 (4 ms)
+[ RUN      ] Creature.infected2
+[       OK ] Creature.infected2 (5 ms)
+[----------] 8 tests from Creature (32 ms total)
+
+[----------] 9 tests from Species
+[ RUN      ] Species.constructor1
+[       OK ] Species.constructor1 (4 ms)
+[ RUN      ] Species.constructor2
+[       OK ] Species.constructor2 (3 ms)
+[ RUN      ] Species.constructor3
+[       OK ] Species.constructor3 (3 ms)
+[ RUN      ] Species.act1
+[       OK ] Species.act1 (5 ms)
+[ RUN      ] Species.act2
+[       OK ] Species.act2 (5 ms)
+[ RUN      ] Species.act3
+[       OK ] Species.act3 (5 ms)
+[ RUN      ] Species.add1
+[       OK ] Species.add1 (4 ms)
+[ RUN      ] Species.add2
+[       OK ] Species.add2 (5 ms)
+[ RUN      ] Species.add3
+[       OK ] Species.add3 (5 ms)
+[----------] 9 tests from Species (40 ms total)
+
+[----------] Global test environment tear-down
+[==========] 57 tests from 3 test cases ran. (374 ms total)
+[  PASSED  ] 57 tests.
+==5351== 
+==5351== HEAP SUMMARY:
+==5351==     in use at exit: 72,704 bytes in 1 blocks
+==5351==   total heap usage: 735 allocs, 734 frees, 209,588 bytes allocated
+==5351== 
+==5351== LEAK SUMMARY:
+==5351==    definitely lost: 0 bytes in 0 blocks
+==5351==    indirectly lost: 0 bytes in 0 blocks
+==5351==      possibly lost: 0 bytes in 0 blocks
+==5351==    still reachable: 72,704 bytes in 1 blocks
+==5351==         suppressed: 0 bytes in 0 blocks
+==5351== Rerun with --leak-check=full to see details of leaked memory
+==5351== 
+==5351== For counts of detected and suppressed errors, rerun with: -v
+==5351== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:79.35% of 155
+Branches executed:90.20% of 102
+Taken at least once:67.65% of 102
+Calls executed:72.04% of 93
+Creating 'Darwin.c++.gcov'

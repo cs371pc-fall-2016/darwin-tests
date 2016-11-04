@@ -1,0 +1,232 @@
+==111== Command: ./TestDarwin
+==111== 
+Running main() from gtest_main.cc
+[==========] Running 69 tests from 18 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from DarwinConstructor
+[ RUN      ] DarwinConstructor.2x2
+[       OK ] DarwinConstructor.2x2 (45 ms)
+[ RUN      ] DarwinConstructor.2x8
+[       OK ] DarwinConstructor.2x8 (3 ms)
+[ RUN      ] DarwinConstructor.12x12
+[       OK ] DarwinConstructor.12x12 (4 ms)
+[----------] 3 tests from DarwinConstructor (66 ms total)
+
+[----------] 6 tests from AddCreature
+[ RUN      ] AddCreature.SpeciesKitten
+[       OK ] AddCreature.SpeciesKitten (9 ms)
+[ RUN      ] AddCreature.SpeciesTiger
+[       OK ] AddCreature.SpeciesTiger (4 ms)
+[ RUN      ] AddCreature.SpeciesDog
+[       OK ] AddCreature.SpeciesDog (5 ms)
+[ RUN      ] AddCreature.CreatureKitten
+[       OK ] AddCreature.CreatureKitten (11 ms)
+[ RUN      ] AddCreature.CreatureTiger
+[       OK ] AddCreature.CreatureTiger (5 ms)
+[ RUN      ] AddCreature.CreatureDog
+[       OK ] AddCreature.CreatureDog (6 ms)
+[----------] 6 tests from AddCreature (47 ms total)
+
+[----------] 3 tests from PrintBoard
+[ RUN      ] PrintBoard.3x3
+[       OK ] PrintBoard.3x3 (3 ms)
+[ RUN      ] PrintBoard.3x3wCreature
+[       OK ] PrintBoard.3x3wCreature (4 ms)
+[ RUN      ] PrintBoard.24x30wCreature
+[       OK ] PrintBoard.24x30wCreature (11 ms)
+[----------] 3 tests from PrintBoard (20 ms total)
+
+[----------] 3 tests from RunSimulation
+[ RUN      ] RunSimulation.2x2
+[       OK ] RunSimulation.2x2 (22 ms)
+[ RUN      ] RunSimulation.3x3
+[       OK ] RunSimulation.3x3 (9 ms)
+[ RUN      ] RunSimulation.3x3wTrap
+[       OK ] RunSimulation.3x3wTrap (7 ms)
+[----------] 3 tests from RunSimulation (43 ms total)
+
+[----------] 3 tests from InFront
+[ RUN      ] InFront.2x2
+[       OK ] InFront.2x2 (5 ms)
+[ RUN      ] InFront.2x2Wall
+[       OK ] InFront.2x2Wall (5 ms)
+[ RUN      ] InFront.2x2Other
+[       OK ] InFront.2x2Other (4 ms)
+[----------] 3 tests from InFront (17 ms total)
+
+[----------] 3 tests from RunTurn
+[ RUN      ] RunTurn.2x2
+[       OK ] RunTurn.2x2 (4 ms)
+[ RUN      ] RunTurn.3x3
+[       OK ] RunTurn.3x3 (4 ms)
+[ RUN      ] RunTurn.3x3wTrap
+[       OK ] RunTurn.3x3wTrap (5 ms)
+[----------] 3 tests from RunTurn (16 ms total)
+
+[----------] 6 tests from Valid
+[ RUN      ] Valid.test1
+[       OK ] Valid.test1 (3 ms)
+[ RUN      ] Valid.test2
+[       OK ] Valid.test2 (2 ms)
+[ RUN      ] Valid.test3
+[       OK ] Valid.test3 (3 ms)
+[ RUN      ] Valid.test4
+[       OK ] Valid.test4 (2 ms)
+[ RUN      ] Valid.test5
+[       OK ] Valid.test5 (2 ms)
+[ RUN      ] Valid.test6
+[       OK ] Valid.test6 (3 ms)
+[----------] 6 tests from Valid (20 ms total)
+
+[----------] 6 tests from PrintCreature
+[ RUN      ] PrintCreature.test1
+[       OK ] PrintCreature.test1 (4 ms)
+[ RUN      ] PrintCreature.test2
+[       OK ] PrintCreature.test2 (3 ms)
+[ RUN      ] PrintCreature.test3
+[       OK ] PrintCreature.test3 (3 ms)
+[ RUN      ] PrintCreature.test4
+[       OK ] PrintCreature.test4 (3 ms)
+[ RUN      ] PrintCreature.test5
+[       OK ] PrintCreature.test5 (3 ms)
+[ RUN      ] PrintCreature.test6
+[       OK ] PrintCreature.test6 (3 ms)
+[----------] 6 tests from PrintCreature (24 ms total)
+
+[----------] 3 tests from Infect
+[ RUN      ] Infect.test1
+[       OK ] Infect.test1 (4 ms)
+[ RUN      ] Infect.test2
+[       OK ] Infect.test2 (3 ms)
+[ RUN      ] Infect.test3
+[       OK ] Infect.test3 (4 ms)
+[----------] 3 tests from Infect (13 ms total)
+
+[----------] 1 test from ExecuteIns
+[ RUN      ] ExecuteIns.test1
+[       OK ] ExecuteIns.test1 (4 ms)
+[----------] 1 test from ExecuteIns (5 ms total)
+
+[----------] 2 tests from ExpectedIns
+[ RUN      ] ExpectedIns.test2
+[       OK ] ExpectedIns.test2 (7 ms)
+[ RUN      ] ExpectedIns.test3
+[       OK ] ExpectedIns.test3 (6 ms)
+[----------] 2 tests from ExpectedIns (16 ms total)
+
+[----------] 4 tests from TurnRight
+[ RUN      ] TurnRight.test1
+[       OK ] TurnRight.test1 (3 ms)
+[ RUN      ] TurnRight.test2
+[       OK ] TurnRight.test2 (3 ms)
+[ RUN      ] TurnRight.test3
+[       OK ] TurnRight.test3 (3 ms)
+[ RUN      ] TurnRight.test4
+[       OK ] TurnRight.test4 (3 ms)
+[----------] 4 tests from TurnRight (17 ms total)
+
+[----------] 4 tests from TurnLeft
+[ RUN      ] TurnLeft.test1
+[       OK ] TurnLeft.test1 (3 ms)
+[ RUN      ] TurnLeft.test2
+[       OK ] TurnLeft.test2 (3 ms)
+[ RUN      ] TurnLeft.test3
+[       OK ] TurnLeft.test3 (3 ms)
+[ RUN      ] TurnLeft.test4
+[       OK ] TurnLeft.test4 (3 ms)
+[----------] 4 tests from TurnLeft (16 ms total)
+
+[----------] 4 tests from Equal
+[ RUN      ] Equal.test1
+[       OK ] Equal.test1 (3 ms)
+[ RUN      ] Equal.test2
+[       OK ] Equal.test2 (3 ms)
+[ RUN      ] Equal.test3
+[       OK ] Equal.test3 (3 ms)
+[ RUN      ] Equal.test4
+[       OK ] Equal.test4 (4 ms)
+[----------] 4 tests from Equal (16 ms total)
+
+[----------] 5 tests from SpeciesConstructor
+[ RUN      ] SpeciesConstructor.test1
+[       OK ] SpeciesConstructor.test1 (1 ms)
+[ RUN      ] SpeciesConstructor.test2
+[       OK ] SpeciesConstructor.test2 (2 ms)
+[ RUN      ] SpeciesConstructor.test3
+[       OK ] SpeciesConstructor.test3 (2 ms)
+[ RUN      ] SpeciesConstructor.test4
+[       OK ] SpeciesConstructor.test4 (1 ms)
+[ RUN      ] SpeciesConstructor.test5
+[       OK ] SpeciesConstructor.test5 (2 ms)
+[----------] 5 tests from SpeciesConstructor (14 ms total)
+
+[----------] 5 tests from PrintSymbol
+[ RUN      ] PrintSymbol.test1
+[       OK ] PrintSymbol.test1 (2 ms)
+[ RUN      ] PrintSymbol.test2
+[       OK ] PrintSymbol.test2 (2 ms)
+[ RUN      ] PrintSymbol.test3
+[       OK ] PrintSymbol.test3 (3 ms)
+[ RUN      ] PrintSymbol.test4
+[       OK ] PrintSymbol.test4 (2 ms)
+[ RUN      ] PrintSymbol.test5
+[       OK ] PrintSymbol.test5 (2 ms)
+[----------] 5 tests from PrintSymbol (16 ms total)
+
+[----------] 5 tests from ValidSpecie
+[ RUN      ] ValidSpecie.test1
+[       OK ] ValidSpecie.test1 (2 ms)
+[ RUN      ] ValidSpecie.test2
+[       OK ] ValidSpecie.test2 (2 ms)
+[ RUN      ] ValidSpecie.test3
+[       OK ] ValidSpecie.test3 (2 ms)
+[ RUN      ] ValidSpecie.test4
+[       OK ] ValidSpecie.test4 (2 ms)
+[ RUN      ] ValidSpecie.test5
+[       OK ] ValidSpecie.test5 (2 ms)
+[----------] 5 tests from ValidSpecie (14 ms total)
+
+[----------] 3 tests from Instructions
+[ RUN      ] Instructions.test1
+[       OK ] Instructions.test1 (3 ms)
+[ RUN      ] Instructions.test2
+[       OK ] Instructions.test2 (2 ms)
+[ RUN      ] Instructions.test3
+[       OK ] Instructions.test3 (2 ms)
+[----------] 3 tests from Instructions (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 69 tests from 18 test cases ran. (461 ms total)
+[  PASSED  ] 69 tests.
+==111== 
+==111== HEAP SUMMARY:
+==111==     in use at exit: 72,704 bytes in 1 blocks
+==111==   total heap usage: 1,253 allocs, 1,252 frees, 373,787 bytes allocated
+==111== 
+==111== LEAK SUMMARY:
+==111==    definitely lost: 0 bytes in 0 blocks
+==111==    indirectly lost: 0 bytes in 0 blocks
+==111==      possibly lost: 0 bytes in 0 blocks
+==111==    still reachable: 72,704 bytes in 1 blocks
+==111==         suppressed: 0 bytes in 0 blocks
+==111== Rerun with --leak-check=full to see details of leaked memory
+==111== 
+==111== For counts of detected and suppressed errors, rerun with: -v
+==111== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:81.72% of 186
+Branches executed:90.00% of 120
+Taken at least once:62.50% of 120
+Calls executed:87.50% of 72
+Creating 'Darwin.c++.gcov'
+.gitignore found
+Darwin.c++ found
+Darwin.h found
+Darwin.log found
+html found
+makefile found
+RunDarwin.c++ found
+RunDarwin.out found
+TestDarwin.c++ found
+TestDarwin.out found
+success
