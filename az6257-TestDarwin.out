@@ -1,0 +1,207 @@
+==28855== Memcheck, a memory error detector
+==28855== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==28855== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==28855== Command: ./TestDarwin
+==28855== 
+Running main() from gtest_main.cc
+[==========] Running 65 tests from 17 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from Darwin_execute_print
+[ RUN      ] Darwin_execute_print.test_execute_print_1
+[       OK ] Darwin_execute_print.test_execute_print_1 (63 ms)
+[ RUN      ] Darwin_execute_print.test_execute_print_2
+[       OK ] Darwin_execute_print.test_execute_print_2 (9 ms)
+[ RUN      ] Darwin_execute_print.test_execute_print_3
+[       OK ] Darwin_execute_print.test_execute_print_3 (27 ms)
+[----------] 3 tests from Darwin_execute_print (104 ms total)
+
+[----------] 5 tests from Darwin_isValid
+[ RUN      ] Darwin_isValid.test_invalid_1
+[       OK ] Darwin_isValid.test_invalid_1 (2 ms)
+[ RUN      ] Darwin_isValid.test_invalid_2
+[       OK ] Darwin_isValid.test_invalid_2 (2 ms)
+[ RUN      ] Darwin_isValid.test_invalid_3
+[       OK ] Darwin_isValid.test_invalid_3 (2 ms)
+[ RUN      ] Darwin_isValid.test_invalid_4
+[       OK ] Darwin_isValid.test_invalid_4 (2 ms)
+[ RUN      ] Darwin_isValid.test_valid_1
+[       OK ] Darwin_isValid.test_valid_1 (2 ms)
+[----------] 5 tests from Darwin_isValid (11 ms total)
+
+[----------] 5 tests from Darwin_isWall
+[ RUN      ] Darwin_isWall.test_wall_1
+[       OK ] Darwin_isWall.test_wall_1 (2 ms)
+[ RUN      ] Darwin_isWall.test_wall_2
+[       OK ] Darwin_isWall.test_wall_2 (2 ms)
+[ RUN      ] Darwin_isWall.test_wall_3
+[       OK ] Darwin_isWall.test_wall_3 (3 ms)
+[ RUN      ] Darwin_isWall.test_wall_4
+[       OK ] Darwin_isWall.test_wall_4 (2 ms)
+[ RUN      ] Darwin_isWall.test_not_wall_1
+[       OK ] Darwin_isWall.test_not_wall_1 (2 ms)
+[----------] 5 tests from Darwin_isWall (11 ms total)
+
+[----------] 5 tests from Darwin_addCreature
+[ RUN      ] Darwin_addCreature.test_single_1
+[       OK ] Darwin_addCreature.test_single_1 (3 ms)
+[ RUN      ] Darwin_addCreature.test_single_2
+[       OK ] Darwin_addCreature.test_single_2 (4 ms)
+[ RUN      ] Darwin_addCreature.test_single_3
+[       OK ] Darwin_addCreature.test_single_3 (4 ms)
+[ RUN      ] Darwin_addCreature.test_multiple_1
+[       OK ] Darwin_addCreature.test_multiple_1 (6 ms)
+[ RUN      ] Darwin_addCreature.test_multiple_2
+[       OK ] Darwin_addCreature.test_multiple_2 (12 ms)
+[----------] 5 tests from Darwin_addCreature (29 ms total)
+
+[----------] 4 tests from Creature_left
+[ RUN      ] Creature_left.test_north
+[       OK ] Creature_left.test_north (4 ms)
+[ RUN      ] Creature_left.test_east
+[       OK ] Creature_left.test_east (3 ms)
+[ RUN      ] Creature_left.test_south
+[       OK ] Creature_left.test_south (3 ms)
+[ RUN      ] Creature_left.test_west
+[       OK ] Creature_left.test_west (4 ms)
+[----------] 4 tests from Creature_left (15 ms total)
+
+[----------] 4 tests from Creature_right
+[ RUN      ] Creature_right.test_north
+[       OK ] Creature_right.test_north (4 ms)
+[ RUN      ] Creature_right.test_east
+[       OK ] Creature_right.test_east (3 ms)
+[ RUN      ] Creature_right.test_south
+[       OK ] Creature_right.test_south (3 ms)
+[ RUN      ] Creature_right.test_west
+[       OK ] Creature_right.test_west (4 ms)
+[----------] 4 tests from Creature_right (15 ms total)
+
+[----------] 3 tests from Creature_incrementPC
+[ RUN      ] Creature_incrementPC.test_1
+[       OK ] Creature_incrementPC.test_1 (3 ms)
+[ RUN      ] Creature_incrementPC.test_2
+[       OK ] Creature_incrementPC.test_2 (3 ms)
+[ RUN      ] Creature_incrementPC.test_3
+[       OK ] Creature_incrementPC.test_3 (3 ms)
+[----------] 3 tests from Creature_incrementPC (9 ms total)
+
+[----------] 3 tests from Creature_incrementEC
+[ RUN      ] Creature_incrementEC.test_1
+[       OK ] Creature_incrementEC.test_1 (2 ms)
+[ RUN      ] Creature_incrementEC.test_2
+[       OK ] Creature_incrementEC.test_2 (4 ms)
+[ RUN      ] Creature_incrementEC.test_3
+[       OK ] Creature_incrementEC.test_3 (3 ms)
+[----------] 3 tests from Creature_incrementEC (9 ms total)
+
+[----------] 3 tests from Creature_hasExecuted
+[ RUN      ] Creature_hasExecuted.test_1
+[       OK ] Creature_hasExecuted.test_1 (3 ms)
+[ RUN      ] Creature_hasExecuted.test_2
+[       OK ] Creature_hasExecuted.test_2 (4 ms)
+[ RUN      ] Creature_hasExecuted.test_3
+[       OK ] Creature_hasExecuted.test_3 (3 ms)
+[----------] 3 tests from Creature_hasExecuted (10 ms total)
+
+[----------] 4 tests from Creature_isEnemy
+[ RUN      ] Creature_isEnemy.test_enemy_1
+[       OK ] Creature_isEnemy.test_enemy_1 (4 ms)
+[ RUN      ] Creature_isEnemy.test_enemy_2
+[       OK ] Creature_isEnemy.test_enemy_2 (4 ms)
+[ RUN      ] Creature_isEnemy.test_friend_1
+[       OK ] Creature_isEnemy.test_friend_1 (3 ms)
+[ RUN      ] Creature_isEnemy.test_friend_2
+[       OK ] Creature_isEnemy.test_friend_2 (4 ms)
+[----------] 4 tests from Creature_isEnemy (16 ms total)
+
+[----------] 3 tests from Creature_infect
+[ RUN      ] Creature_infect.test_infect_1
+[       OK ] Creature_infect.test_infect_1 (5 ms)
+[ RUN      ] Creature_infect.test_infect_2
+[       OK ] Creature_infect.test_infect_2 (4 ms)
+[ RUN      ] Creature_infect.test_infect_3
+[       OK ] Creature_infect.test_infect_3 (5 ms)
+[----------] 3 tests from Creature_infect (15 ms total)
+
+[----------] 3 tests from Creature_step
+[ RUN      ] Creature_step.test_step_1
+[       OK ] Creature_step.test_step_1 (6 ms)
+[ RUN      ] Creature_step.test_step_2
+[       OK ] Creature_step.test_step_2 (5 ms)
+[ RUN      ] Creature_step.test_step_3
+[       OK ] Creature_step.test_step_3 (4 ms)
+[----------] 3 tests from Creature_step (16 ms total)
+
+[----------] 3 tests from Creature_takeJump
+[ RUN      ] Creature_takeJump.test_jump_1
+[       OK ] Creature_takeJump.test_jump_1 (4 ms)
+[ RUN      ] Creature_takeJump.test_jump_2
+[       OK ] Creature_takeJump.test_jump_2 (5 ms)
+[ RUN      ] Creature_takeJump.test_jump_3
+[       OK ] Creature_takeJump.test_jump_3 (6 ms)
+[----------] 3 tests from Creature_takeJump (15 ms total)
+
+[----------] 3 tests from Creature_print
+[ RUN      ] Creature_print.test_print_1
+[       OK ] Creature_print.test_print_1 (3 ms)
+[ RUN      ] Creature_print.test_print_2
+[       OK ] Creature_print.test_print_2 (4 ms)
+[ RUN      ] Creature_print.test_print_3
+[       OK ] Creature_print.test_print_3 (3 ms)
+[----------] 3 tests from Creature_print (10 ms total)
+
+[----------] 7 tests from Species_add
+[ RUN      ] Species_add.test_single_1
+[       OK ] Species_add.test_single_1 (3 ms)
+[ RUN      ] Species_add.test_single_2
+[       OK ] Species_add.test_single_2 (3 ms)
+[ RUN      ] Species_add.test_single_3
+[       OK ] Species_add.test_single_3 (3 ms)
+[ RUN      ] Species_add.test_multiple_1
+[       OK ] Species_add.test_multiple_1 (3 ms)
+[ RUN      ] Species_add.test_multiple_2
+[       OK ] Species_add.test_multiple_2 (4 ms)
+[ RUN      ] Species_add.test_multiple_3
+[       OK ] Species_add.test_multiple_3 (3 ms)
+[ RUN      ] Species_add.test_multiple_4
+[       OK ] Species_add.test_multiple_4 (4 ms)
+[----------] 7 tests from Species_add (23 ms total)
+
+[----------] 4 tests from Species_get_aux
+[ RUN      ] Species_get_aux.test_single_1
+[       OK ] Species_get_aux.test_single_1 (3 ms)
+[ RUN      ] Species_get_aux.test_single_2
+[       OK ] Species_get_aux.test_single_2 (2 ms)
+[ RUN      ] Species_get_aux.test_single_3
+[       OK ] Species_get_aux.test_single_3 (3 ms)
+[ RUN      ] Species_get_aux.test_multiple_1
+[       OK ] Species_get_aux.test_multiple_1 (7 ms)
+[----------] 4 tests from Species_get_aux (15 ms total)
+
+[----------] 3 tests from Species_print
+[ RUN      ] Species_print.test_print_1
+[       OK ] Species_print.test_print_1 (3 ms)
+[ RUN      ] Species_print.test_print_2
+[       OK ] Species_print.test_print_2 (3 ms)
+[ RUN      ] Species_print.test_print_3
+[       OK ] Species_print.test_print_3 (3 ms)
+[----------] 3 tests from Species_print (9 ms total)
+
+[----------] Global test environment tear-down
+[==========] 65 tests from 17 test cases ran. (367 ms total)
+[  PASSED  ] 65 tests.
+==28855== 
+==28855== HEAP SUMMARY:
+==28855==     in use at exit: 0 bytes in 0 blocks
+==28855==   total heap usage: 1,838 allocs, 1,838 frees, 219,920 bytes allocated
+==28855== 
+==28855== All heap blocks were freed -- no leaks are possible
+==28855== 
+==28855== For counts of detected and suppressed errors, rerun with: -v
+==28855== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:90.18% of 163
+Branches executed:92.45% of 106
+Taken at least once:71.70% of 106
+Calls executed:86.52% of 89
+Creating 'Darwin.c++.gcov'

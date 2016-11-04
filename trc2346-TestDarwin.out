@@ -1,0 +1,150 @@
+==532== Memcheck, a memory error detector
+==532== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==532== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==532== Command: ./TestDarwin
+==532== 
+Running main() from gtest_main.cc
+[==========] Running 53 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 8 tests from SpeciesFixture
+[ RUN      ] SpeciesFixture.add_instruction_1
+[       OK ] SpeciesFixture.add_instruction_1 (19 ms)
+[ RUN      ] SpeciesFixture.add_instruction_2
+[       OK ] SpeciesFixture.add_instruction_2 (3 ms)
+[ RUN      ] SpeciesFixture.add_instruction_3
+[       OK ] SpeciesFixture.add_instruction_3 (3 ms)
+[ RUN      ] SpeciesFixture.add_instruction_4
+[       OK ] SpeciesFixture.add_instruction_4 (10 ms)
+[ RUN      ] SpeciesFixture.test_execute_1
+[       OK ] SpeciesFixture.test_execute_1 (14 ms)
+[ RUN      ] SpeciesFixture.test_execute_2
+[       OK ] SpeciesFixture.test_execute_2 (15 ms)
+[ RUN      ] SpeciesFixture.test_execute_3
+[       OK ] SpeciesFixture.test_execute_3 (11 ms)
+[ RUN      ] SpeciesFixture.test_execute_4
+[       OK ] SpeciesFixture.test_execute_4 (12 ms)
+[----------] 8 tests from SpeciesFixture (95 ms total)
+
+[----------] 10 tests from CreatureFixture
+[ RUN      ] CreatureFixture.test_action_1
+[       OK ] CreatureFixture.test_action_1 (10 ms)
+[ RUN      ] CreatureFixture.test_action_2
+[       OK ] CreatureFixture.test_action_2 (13 ms)
+[ RUN      ] CreatureFixture.test_action_3
+[       OK ] CreatureFixture.test_action_3 (11 ms)
+[ RUN      ] CreatureFixture.test_action_4
+[       OK ] CreatureFixture.test_action_4 (10 ms)
+[ RUN      ] CreatureFixture.test_infect_1
+[       OK ] CreatureFixture.test_infect_1 (4 ms)
+[ RUN      ] CreatureFixture.test_infect_2
+[       OK ] CreatureFixture.test_infect_2 (7 ms)
+[ RUN      ] CreatureFixture.test_infect_3
+[       OK ] CreatureFixture.test_infect_3 (6 ms)
+[ RUN      ] CreatureFixture.test_enemy_1
+[       OK ] CreatureFixture.test_enemy_1 (3 ms)
+[ RUN      ] CreatureFixture.test_enemy_2
+[       OK ] CreatureFixture.test_enemy_2 (2 ms)
+[ RUN      ] CreatureFixture.test_enemy_3
+[       OK ] CreatureFixture.test_enemy_3 (5 ms)
+[----------] 10 tests from CreatureFixture (71 ms total)
+
+[----------] 13 tests from StateFixture
+[ RUN      ] StateFixture.evaluate_if_1
+[       OK ] StateFixture.evaluate_if_1 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_2
+[       OK ] StateFixture.evaluate_if_2 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_3
+[       OK ] StateFixture.evaluate_if_3 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_4
+[       OK ] StateFixture.evaluate_if_4 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_5
+[       OK ] StateFixture.evaluate_if_5 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_6
+[       OK ] StateFixture.evaluate_if_6 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_7
+[       OK ] StateFixture.evaluate_if_7 (3 ms)
+[ RUN      ] StateFixture.evaluate_if_8
+[       OK ] StateFixture.evaluate_if_8 (2 ms)
+[ RUN      ] StateFixture.evaluate_if_9
+[       OK ] StateFixture.evaluate_if_9 (3 ms)
+[ RUN      ] StateFixture.do_action_1
+[       OK ] StateFixture.do_action_1 (3 ms)
+[ RUN      ] StateFixture.do_action_2
+[       OK ] StateFixture.do_action_2 (5 ms)
+[ RUN      ] StateFixture.do_action_3
+[       OK ] StateFixture.do_action_3 (5 ms)
+[ RUN      ] StateFixture.do_action_4
+[       OK ] StateFixture.do_action_4 (4 ms)
+[----------] 13 tests from StateFixture (45 ms total)
+
+[----------] 7 tests from DarwinFixture
+[ RUN      ] DarwinFixture.add_creature_1
+[       OK ] DarwinFixture.add_creature_1 (43 ms)
+[ RUN      ] DarwinFixture.add_creature_2
+[       OK ] DarwinFixture.add_creature_2 (6 ms)
+[ RUN      ] DarwinFixture.execute_turn_1
+[       OK ] DarwinFixture.execute_turn_1 (18 ms)
+[ RUN      ] DarwinFixture.execute_turn_2
+[       OK ] DarwinFixture.execute_turn_2 (13 ms)
+[ RUN      ] DarwinFixture.execute_turn_3
+[       OK ] DarwinFixture.execute_turn_3 (10 ms)
+[ RUN      ] DarwinFixture.execute_turn_4
+[       OK ] DarwinFixture.execute_turn_4 (5 ms)
+[ RUN      ] DarwinFixture.execute_turn_5
+[       OK ] DarwinFixture.execute_turn_5 (11 ms)
+[----------] 7 tests from DarwinFixture (107 ms total)
+
+[----------] 7 tests from ProjectPrintFixture
+[ RUN      ] ProjectPrintFixture.print_species
+[       OK ] ProjectPrintFixture.print_species (6 ms)
+[ RUN      ] ProjectPrintFixture.print_creature_1
+[       OK ] ProjectPrintFixture.print_creature_1 (3 ms)
+[ RUN      ] ProjectPrintFixture.print_creature_2
+[       OK ] ProjectPrintFixture.print_creature_2 (4 ms)
+[ RUN      ] ProjectPrintFixture.print_grid_1
+[       OK ] ProjectPrintFixture.print_grid_1 (7 ms)
+[ RUN      ] ProjectPrintFixture.print_grid_2
+[       OK ] ProjectPrintFixture.print_grid_2 (5 ms)
+[ RUN      ] ProjectPrintFixture.print_grid_3
+[       OK ] ProjectPrintFixture.print_grid_3 (4 ms)
+[ RUN      ] ProjectPrintFixture.print_grid_4
+[       OK ] ProjectPrintFixture.print_grid_4 (3 ms)
+[----------] 7 tests from ProjectPrintFixture (34 ms total)
+
+[----------] 8 tests from ConstructorFixture
+[ RUN      ] ConstructorFixture.Tile
+[       OK ] ConstructorFixture.Tile (3 ms)
+[ RUN      ] ConstructorFixture.State_1
+[       OK ] ConstructorFixture.State_1 (5 ms)
+[ RUN      ] ConstructorFixture.State_2
+[       OK ] ConstructorFixture.State_2 (4 ms)
+[ RUN      ] ConstructorFixture.Darwin_1
+[       OK ] ConstructorFixture.Darwin_1 (6 ms)
+[ RUN      ] ConstructorFixture.Darwin_2
+[       OK ] ConstructorFixture.Darwin_2 (4 ms)
+[ RUN      ] ConstructorFixture.Darwin_3
+[       OK ] ConstructorFixture.Darwin_3 (5 ms)
+[ RUN      ] ConstructorFixture.Species
+[       OK ] ConstructorFixture.Species (2 ms)
+[ RUN      ] ConstructorFixture.Creature
+[       OK ] ConstructorFixture.Creature (2 ms)
+[----------] 8 tests from ConstructorFixture (33 ms total)
+
+[----------] Global test environment tear-down
+[==========] 53 tests from 6 test cases ran. (416 ms total)
+[  PASSED  ] 53 tests.
+==532== 
+==532== HEAP SUMMARY:
+==532==     in use at exit: 0 bytes in 0 blocks
+==532==   total heap usage: 1,447 allocs, 1,447 frees, 240,324 bytes allocated
+==532== 
+==532== All heap blocks were freed -- no leaks are possible
+==532== 
+==532== For counts of detected and suppressed errors, rerun with: -v
+==532== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:98.37% of 123
+Branches executed:100.00% of 105
+Taken at least once:82.86% of 105
+Calls executed:91.23% of 57
+Creating 'Darwin.c++.gcov'

@@ -1,0 +1,204 @@
+==16979== Memcheck, a memory error detector
+==16979== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==16979== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==16979== Command: ./TestDarwin
+==16979== 
+Running main() from gtest_main.cc
+[==========] Running 84 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from SpeciesFixture
+[ RUN      ] SpeciesFixture.speciesDefault1
+[       OK ] SpeciesFixture.speciesDefault1 (10 ms)
+[ RUN      ] SpeciesFixture.speciesDefault2
+[       OK ] SpeciesFixture.speciesDefault2 (2 ms)
+[ RUN      ] SpeciesFixture.speciesDefault3
+[       OK ] SpeciesFixture.speciesDefault3 (5 ms)
+[ RUN      ] SpeciesFixture.addInstruction1
+[       OK ] SpeciesFixture.addInstruction1 (9 ms)
+[ RUN      ] SpeciesFixture.addInstruction2
+[       OK ] SpeciesFixture.addInstruction2 (3 ms)
+[ RUN      ] SpeciesFixture.addInstruction3
+[       OK ] SpeciesFixture.addInstruction3 (4 ms)
+[ RUN      ] SpeciesFixture.addInstruction4
+[       OK ] SpeciesFixture.addInstruction4 (4 ms)
+[ RUN      ] SpeciesFixture.addInstruction5
+[       OK ] SpeciesFixture.addInstruction5 (6 ms)
+[ RUN      ] SpeciesFixture.addInstruction6
+[       OK ] SpeciesFixture.addInstruction6 (9 ms)
+[ RUN      ] SpeciesFixture.executeLine1
+[       OK ] SpeciesFixture.executeLine1 (46 ms)
+[ RUN      ] SpeciesFixture.executeLine2
+[       OK ] SpeciesFixture.executeLine2 (3 ms)
+[ RUN      ] SpeciesFixture.executeLine3
+[       OK ] SpeciesFixture.executeLine3 (7 ms)
+[----------] 12 tests from SpeciesFixture (115 ms total)
+
+[----------] 33 tests from CreatureFixture
+[ RUN      ] CreatureFixture.creatureDefault1
+[       OK ] CreatureFixture.creatureDefault1 (1 ms)
+[ RUN      ] CreatureFixture.creatureDefault2
+[       OK ] CreatureFixture.creatureDefault2 (3 ms)
+[ RUN      ] CreatureFixture.creatureDefault3
+[       OK ] CreatureFixture.creatureDefault3 (5 ms)
+[ RUN      ] CreatureFixture.objectConstructor1
+[       OK ] CreatureFixture.objectConstructor1 (1 ms)
+[ RUN      ] CreatureFixture.objectConstructor2
+[       OK ] CreatureFixture.objectConstructor2 (3 ms)
+[ RUN      ] CreatureFixture.objectConstructor3
+[       OK ] CreatureFixture.objectConstructor3 (6 ms)
+[ RUN      ] CreatureFixture.performAction1
+[       OK ] CreatureFixture.performAction1 (1 ms)
+[ RUN      ] CreatureFixture.performAction2
+[       OK ] CreatureFixture.performAction2 (4 ms)
+[ RUN      ] CreatureFixture.performAction3
+[       OK ] CreatureFixture.performAction3 (5 ms)
+[ RUN      ] CreatureFixture.valid1
+[       OK ] CreatureFixture.valid1 (1 ms)
+[ RUN      ] CreatureFixture.valid2
+[       OK ] CreatureFixture.valid2 (2 ms)
+[ RUN      ] CreatureFixture.valid3
+[       OK ] CreatureFixture.valid3 (2 ms)
+[ RUN      ] CreatureFixture.go1
+[       OK ] CreatureFixture.go1 (2 ms)
+[ RUN      ] CreatureFixture.go2
+[       OK ] CreatureFixture.go2 (2 ms)
+[ RUN      ] CreatureFixture.go3
+[       OK ] CreatureFixture.go3 (3 ms)
+[ RUN      ] CreatureFixture.turnRight1
+[       OK ] CreatureFixture.turnRight1 (3 ms)
+[ RUN      ] CreatureFixture.turnRight2
+[       OK ] CreatureFixture.turnRight2 (1 ms)
+[ RUN      ] CreatureFixture.turnRight3
+[       OK ] CreatureFixture.turnRight3 (2 ms)
+[ RUN      ] CreatureFixture.turnLeft1
+[       OK ] CreatureFixture.turnLeft1 (2 ms)
+[ RUN      ] CreatureFixture.turnLeft2
+[       OK ] CreatureFixture.turnLeft2 (2 ms)
+[ RUN      ] CreatureFixture.turnLeft3
+[       OK ] CreatureFixture.turnLeft3 (2 ms)
+[ RUN      ] CreatureFixture.ifEnemy1
+[       OK ] CreatureFixture.ifEnemy1 (2 ms)
+[ RUN      ] CreatureFixture.ifEnemy2
+[       OK ] CreatureFixture.ifEnemy2 (1 ms)
+[ RUN      ] CreatureFixture.ifEnemy3
+[       OK ] CreatureFixture.ifEnemy3 (4 ms)
+[ RUN      ] CreatureFixture.inFront1
+[       OK ] CreatureFixture.inFront1 (1 ms)
+[ RUN      ] CreatureFixture.inFront2
+[       OK ] CreatureFixture.inFront2 (2 ms)
+[ RUN      ] CreatureFixture.inFront3
+[       OK ] CreatureFixture.inFront3 (3 ms)
+[ RUN      ] CreatureFixture.inFront4
+[       OK ] CreatureFixture.inFront4 (2 ms)
+[ RUN      ] CreatureFixture.infect1
+[       OK ] CreatureFixture.infect1 (2 ms)
+[ RUN      ] CreatureFixture.infect2
+[       OK ] CreatureFixture.infect2 (2 ms)
+[ RUN      ] CreatureFixture.infect3
+[       OK ] CreatureFixture.infect3 (6 ms)
+[ RUN      ] CreatureFixture.printSpecies1
+[       OK ] CreatureFixture.printSpecies1 (5 ms)
+[ RUN      ] CreatureFixture.printSpecies2
+[       OK ] CreatureFixture.printSpecies2 (3 ms)
+[----------] 33 tests from CreatureFixture (90 ms total)
+
+[----------] 39 tests from DarwinFixture
+[ RUN      ] DarwinFixture.singleConstructor1
+[       OK ] DarwinFixture.singleConstructor1 (3 ms)
+[ RUN      ] DarwinFixture.singleConstructor2
+[       OK ] DarwinFixture.singleConstructor2 (5 ms)
+[ RUN      ] DarwinFixture.singleConstructor3
+[       OK ] DarwinFixture.singleConstructor3 (8 ms)
+[ RUN      ] DarwinFixture.twoIntConstructor1
+[       OK ] DarwinFixture.twoIntConstructor1 (1 ms)
+[ RUN      ] DarwinFixture.twoIntConstructor2
+[       OK ] DarwinFixture.twoIntConstructor2 (4 ms)
+[ RUN      ] DarwinFixture.twoIntConstructor3
+[       OK ] DarwinFixture.twoIntConstructor3 (8 ms)
+[ RUN      ] DarwinFixture.addCreature1
+[       OK ] DarwinFixture.addCreature1 (2 ms)
+[ RUN      ] DarwinFixture.addCreature2
+[       OK ] DarwinFixture.addCreature2 (3 ms)
+[ RUN      ] DarwinFixture.addCreature3
+[       OK ] DarwinFixture.addCreature3 (7 ms)
+[ RUN      ] DarwinFixture.hop1
+[       OK ] DarwinFixture.hop1 (6 ms)
+[ RUN      ] DarwinFixture.hop2
+[       OK ] DarwinFixture.hop2 (8 ms)
+[ RUN      ] DarwinFixture.hop3
+[       OK ] DarwinFixture.hop3 (5 ms)
+[ RUN      ] DarwinFixture.hop4
+[       OK ] DarwinFixture.hop4 (9 ms)
+[ RUN      ] DarwinFixture.infect1
+[       OK ] DarwinFixture.infect1 (3 ms)
+[ RUN      ] DarwinFixture.infect2
+[       OK ] DarwinFixture.infect2 (8 ms)
+[ RUN      ] DarwinFixture.infect3
+[       OK ] DarwinFixture.infect3 (9 ms)
+[ RUN      ] DarwinFixture.infect4
+[       OK ] DarwinFixture.infect4 (5 ms)
+[ RUN      ] DarwinFixture.infect5
+[       OK ] DarwinFixture.infect5 (8 ms)
+[ RUN      ] DarwinFixture.ifEmpty1
+[       OK ] DarwinFixture.ifEmpty1 (4 ms)
+[ RUN      ] DarwinFixture.ifEmpty2
+[       OK ] DarwinFixture.ifEmpty2 (5 ms)
+[ RUN      ] DarwinFixture.ifEmpty3
+[       OK ] DarwinFixture.ifEmpty3 (6 ms)
+[ RUN      ] DarwinFixture.ifEmpty4
+[       OK ] DarwinFixture.ifEmpty4 (10 ms)
+[ RUN      ] DarwinFixture.ifWall1
+[       OK ] DarwinFixture.ifWall1 (4 ms)
+[ RUN      ] DarwinFixture.ifWall2
+[       OK ] DarwinFixture.ifWall2 (3 ms)
+[ RUN      ] DarwinFixture.ifWall3
+[       OK ] DarwinFixture.ifWall3 (3 ms)
+[ RUN      ] DarwinFixture.ifWall4
+[       OK ] DarwinFixture.ifWall4 (3 ms)
+[ RUN      ] DarwinFixture.ifRandom1
+[       OK ] DarwinFixture.ifRandom1 (5 ms)
+[ RUN      ] DarwinFixture.ifRandom2
+[       OK ] DarwinFixture.ifRandom2 (4 ms)
+[ RUN      ] DarwinFixture.ifRandom3
+[       OK ] DarwinFixture.ifRandom3 (4 ms)
+[ RUN      ] DarwinFixture.ifRandom4
+[       OK ] DarwinFixture.ifRandom4 (4 ms)
+[ RUN      ] DarwinFixture.ifEnemy1
+[       OK ] DarwinFixture.ifEnemy1 (4 ms)
+[ RUN      ] DarwinFixture.ifEnemy2
+[       OK ] DarwinFixture.ifEnemy2 (3 ms)
+[ RUN      ] DarwinFixture.ifEnemy3
+[       OK ] DarwinFixture.ifEnemy3 (4 ms)
+[ RUN      ] DarwinFixture.ifEnemy4
+[       OK ] DarwinFixture.ifEnemy4 (3 ms)
+[ RUN      ] DarwinFixture.simulate1
+[       OK ] DarwinFixture.simulate1 (17 ms)
+[ RUN      ] DarwinFixture.coutOperator1
+[       OK ] DarwinFixture.coutOperator1 (1 ms)
+[ RUN      ] DarwinFixture.coutOperator2
+[       OK ] DarwinFixture.coutOperator2 (3 ms)
+[ RUN      ] DarwinFixture.coutOperator3
+[       OK ] DarwinFixture.coutOperator3 (3 ms)
+[ RUN      ] DarwinFixture.coutOperator4
+[       OK ] DarwinFixture.coutOperator4 (4 ms)
+[----------] 39 tests from DarwinFixture (203 ms total)
+
+[----------] Global test environment tear-down
+[==========] 84 tests from 3 test cases ran. (433 ms total)
+[  PASSED  ] 84 tests.
+==16979== 
+==16979== HEAP SUMMARY:
+==16979==     in use at exit: 0 bytes in 0 blocks
+==16979==   total heap usage: 1,733 allocs, 1,733 frees, 199,689 bytes allocated
+==16979== 
+==16979== All heap blocks were freed -- no leaks are possible
+==16979== 
+==16979== For counts of detected and suppressed errors, rerun with: -v
+==16979== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:98.00% of 200
+Branches executed:97.64% of 254
+Taken at least once:65.75% of 254
+Calls executed:81.46% of 178
+Creating 'Darwin.c++.gcov'
+

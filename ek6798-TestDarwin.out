@@ -1,0 +1,297 @@
+==5711== Memcheck, a memory error detector
+==5711== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5711== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5711== Command: ./TestDarwin
+==5711== 
+Running main() from gtest_main.cc
+[==========] Running 50 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 50 tests from DarwinFixture
+[ RUN      ] DarwinFixture.test_1
+[       OK ] DarwinFixture.test_1 (47 ms)
+[ RUN      ] DarwinFixture.test_2
+[       OK ] DarwinFixture.test_2 (94 ms)
+[ RUN      ] DarwinFixture.test_3
+[       OK ] DarwinFixture.test_3 (181 ms)
+[ RUN      ] DarwinFixture.test_4
+[       OK ] DarwinFixture.test_4 (23 ms)
+[ RUN      ] DarwinFixture.test_5
+[       OK ] DarwinFixture.test_5 (2 ms)
+[ RUN      ] DarwinFixture.test_6
+[       OK ] DarwinFixture.test_6 (1 ms)
+[ RUN      ] DarwinFixture.test_7
+[       OK ] DarwinFixture.test_7 (3 ms)
+[ RUN      ] DarwinFixture.test_8
+[       OK ] DarwinFixture.test_8 (1 ms)
+[ RUN      ] DarwinFixture.test_9
+[       OK ] DarwinFixture.test_9 (1 ms)
+[ RUN      ] DarwinFixture.test_10
+[       OK ] DarwinFixture.test_10 (2 ms)
+[ RUN      ] DarwinFixture.test_11
+[       OK ] DarwinFixture.test_11 (2 ms)
+[ RUN      ] DarwinFixture.test_12
+[       OK ] DarwinFixture.test_12 (3 ms)
+[ RUN      ] DarwinFixture.test_13
+[       OK ] DarwinFixture.test_13 (4 ms)
+[ RUN      ] DarwinFixture.test_14
+[       OK ] DarwinFixture.test_14 (72 ms)
+[ RUN      ] DarwinFixture.test_15
+[       OK ] DarwinFixture.test_15 (7 ms)
+[ RUN      ] DarwinFixture.test_16
+[       OK ] DarwinFixture.test_16 (7 ms)
+[ RUN      ] DarwinFixture.test_17
+[       OK ] DarwinFixture.test_17 (7 ms)
+[ RUN      ] DarwinFixture.test_18
+[       OK ] DarwinFixture.test_18 (19 ms)
+[ RUN      ] DarwinFixture.test_19
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x415CB5: DarwinFixture_test_19_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5dc8890 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4066B2: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x415CB5: DarwinFixture_test_19_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_19 (22 ms)
+[ RUN      ] DarwinFixture.test_20
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x417800: DarwinFixture_test_20_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5dcbab0 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4066B2: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x417800: DarwinFixture_test_20_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_20 (27 ms)
+[ RUN      ] DarwinFixture.test_21
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x419A89: DarwinFixture_test_21_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5dcfbd0 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4066B2: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x419A89: DarwinFixture_test_21_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_21 (18 ms)
+[ RUN      ] DarwinFixture.test_22
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x41BBB9: DarwinFixture_test_22_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5dd3870 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4066B2: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x41BBB9: DarwinFixture_test_22_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_22 (18 ms)
+[ RUN      ] DarwinFixture.test_23
+[       OK ] DarwinFixture.test_23 (2 ms)
+[ RUN      ] DarwinFixture.test_24
+[       OK ] DarwinFixture.test_24 (3 ms)
+[ RUN      ] DarwinFixture.test_25
+[       OK ] DarwinFixture.test_25 (3 ms)
+[ RUN      ] DarwinFixture.test_26
+[       OK ] DarwinFixture.test_26 (3 ms)
+[ RUN      ] DarwinFixture.test_27
+[       OK ] DarwinFixture.test_27 (2 ms)
+[ RUN      ] DarwinFixture.test_28
+[       OK ] DarwinFixture.test_28 (5 ms)
+[ RUN      ] DarwinFixture.test_29
+[       OK ] DarwinFixture.test_29 (12 ms)
+[ RUN      ] DarwinFixture.test_30
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4219AB: DarwinFixture_test_30_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5ddd2f0 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4066B2: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4219AB: DarwinFixture_test_30_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_30 (14 ms)
+[ RUN      ] DarwinFixture.test_31
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x423086: DarwinFixture_test_31_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5de01e0 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4066B2: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x423086: DarwinFixture_test_31_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_31 (15 ms)
+[ RUN      ] DarwinFixture.test_32
+[       OK ] DarwinFixture.test_32 (10 ms)
+[ RUN      ] DarwinFixture.test_33
+[       OK ] DarwinFixture.test_33 (7 ms)
+[ RUN      ] DarwinFixture.test_34
+[       OK ] DarwinFixture.test_34 (4 ms)
+[ RUN      ] DarwinFixture.test_35
+[       OK ] DarwinFixture.test_35 (4 ms)
+[ RUN      ] DarwinFixture.test_36
+[       OK ] DarwinFixture.test_36 (3 ms)
+[ RUN      ] DarwinFixture.test_37
+[       OK ] DarwinFixture.test_37 (3 ms)
+[ RUN      ] DarwinFixture.test_38
+[       OK ] DarwinFixture.test_38 (4 ms)
+[ RUN      ] DarwinFixture.test_39
+[       OK ] DarwinFixture.test_39 (10 ms)
+[ RUN      ] DarwinFixture.test_40
+[       OK ] DarwinFixture.test_40 (13 ms)
+[ RUN      ] DarwinFixture.test_41
+==5711== Invalid write of size 1
+==5711==    at 0x408324: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x42BE49: DarwinFixture_test_41_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4546FC: testing::Test::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454793: testing::TestInfo::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454894: testing::TestCase::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454B0C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x454DED: testing::UnitTest::Run() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x404FAF: main (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==  Address 0x5dec2c0 is 16 bytes inside a block of size 24 free'd
+==5711==    at 0x4C2C2BC: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5711==    by 0x40DF49: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false> >::deallocate(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*, unsigned long) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C9C8: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_deallocate_node(std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40D687: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<Creature const* const, bool>, false>*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40C150: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(std::integral_constant<bool, true>, Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40AF9D: std::_Hashtable<Creature const*, std::pair<Creature const* const, bool>, std::allocator<std::pair<Creature const* const, bool> >, std::__detail::_Select1st, std::equal_to<Creature const*>, std::hash<Creature const*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x40A022: std::unordered_map<Creature const*, bool, std::hash<Creature const*>, std::equal_to<Creature const*>, std::allocator<std::pair<Creature const* const, bool> > >::erase(Creature const* const&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x406476: Creature::performAction(std::string&, Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4054FC: Creature::chooseAction(Darwin&) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x4082E7: Darwin::startGame(int) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x42BE49: DarwinFixture_test_41_Test::TestBody() (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711==    by 0x461CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/erick42/cs371p/darwin-ek6798/TestDarwin)
+==5711== 
+[       OK ] DarwinFixture.test_41 (15 ms)
+[ RUN      ] DarwinFixture.test_42
+[       OK ] DarwinFixture.test_42 (13 ms)
+[ RUN      ] DarwinFixture.test_43
+[       OK ] DarwinFixture.test_43 (13 ms)
+[ RUN      ] DarwinFixture.test_44
+[       OK ] DarwinFixture.test_44 (7 ms)
+[ RUN      ] DarwinFixture.test_45
+[       OK ] DarwinFixture.test_45 (4 ms)
+[ RUN      ] DarwinFixture.test_46
+[       OK ] DarwinFixture.test_46 (4 ms)
+[ RUN      ] DarwinFixture.test_47
+[       OK ] DarwinFixture.test_47 (4 ms)
+[ RUN      ] DarwinFixture.test_48
+[       OK ] DarwinFixture.test_48 (4 ms)
+[ RUN      ] DarwinFixture.test_49
+[       OK ] DarwinFixture.test_49 (4 ms)
+[ RUN      ] DarwinFixture.test_50
+[       OK ] DarwinFixture.test_50 (4 ms)
+[----------] 50 tests from DarwinFixture (764 ms total)
+
+[----------] Global test environment tear-down
+[==========] 50 tests from 1 test case ran. (792 ms total)
+[  PASSED  ] 50 tests.
+==5711== 
+==5711== HEAP SUMMARY:
+==5711==     in use at exit: 0 bytes in 0 blocks
+==5711==   total heap usage: 2,265 allocs, 2,265 frees, 1,678,989 bytes allocated
+==5711== 
+==5711== All heap blocks were freed -- no leaks are possible
+==5711== 
+==5711== For counts of detected and suppressed errors, rerun with: -v
+==5711== ERROR SUMMARY: 25 errors from 7 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:97.86% of 140
+Branches executed:93.23% of 266
+Taken at least once:69.17% of 266
+Calls executed:84.06% of 251
+Creating 'Darwin.c++.gcov'

@@ -1,0 +1,161 @@
+==6751== Memcheck, a memory error detector
+==6751== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==6751== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==6751== Command: ./TestDarwin
+==6751== 
+Running main() from gtest_main.cc
+[==========] Running 63 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 63 tests from DarwinFixture
+[ RUN      ] DarwinFixture.Darwin_constructor
+[       OK ] DarwinFixture.Darwin_constructor (41 ms)
+[ RUN      ] DarwinFixture.Darwin_addCreature1
+[       OK ] DarwinFixture.Darwin_addCreature1 (20 ms)
+[ RUN      ] DarwinFixture.Darwin_addCreature2
+[       OK ] DarwinFixture.Darwin_addCreature2 (6 ms)
+[ RUN      ] DarwinFixture.Darwin_addCreature3
+[       OK ] DarwinFixture.Darwin_addCreature3 (6 ms)
+[ RUN      ] DarwinFixture.Darwin_addCreature4
+[       OK ] DarwinFixture.Darwin_addCreature4 (45 ms)
+[ RUN      ] DarwinFixture.Darwin_hop_east
+[       OK ] DarwinFixture.Darwin_hop_east (13 ms)
+[ RUN      ] DarwinFixture.Darwin_hop_west
+[       OK ] DarwinFixture.Darwin_hop_west (5 ms)
+[ RUN      ] DarwinFixture.Darwin_hop_south
+[       OK ] DarwinFixture.Darwin_hop_south (5 ms)
+[ RUN      ] DarwinFixture.Darwin_hop_north
+[       OK ] DarwinFixture.Darwin_hop_north (6 ms)
+[ RUN      ] DarwinFixture.Darwin_infect_success
+[       OK ] DarwinFixture.Darwin_infect_success (11 ms)
+[ RUN      ] DarwinFixture.Darwin_infect_friendly
+[       OK ] DarwinFixture.Darwin_infect_friendly (6 ms)
+[ RUN      ] DarwinFixture.Darwin_infect_wall
+[       OK ] DarwinFixture.Darwin_infect_wall (7 ms)
+[ RUN      ] DarwinFixture.Darwin_empty_success
+[       OK ] DarwinFixture.Darwin_empty_success (3 ms)
+[ RUN      ] DarwinFixture.Darwin_empty_wall
+[       OK ] DarwinFixture.Darwin_empty_wall (3 ms)
+[ RUN      ] DarwinFixture.Darwin_empty_creature
+[       OK ] DarwinFixture.Darwin_empty_creature (4 ms)
+[ RUN      ] DarwinFixture.Darwin_wall_success
+[       OK ] DarwinFixture.Darwin_wall_success (7 ms)
+[ RUN      ] DarwinFixture.Darwin_wall_false
+[       OK ] DarwinFixture.Darwin_wall_false (7 ms)
+[ RUN      ] DarwinFixture.Darwin_wall_hybrid
+[       OK ] DarwinFixture.Darwin_wall_hybrid (7 ms)
+[ RUN      ] DarwinFixture.Darwin_enemy_success
+[       OK ] DarwinFixture.Darwin_enemy_success (4 ms)
+[ RUN      ] DarwinFixture.Darwin_enemy_empty
+[       OK ] DarwinFixture.Darwin_enemy_empty (4 ms)
+[ RUN      ] DarwinFixture.Darwin_enemy_wall
+[       OK ] DarwinFixture.Darwin_enemy_wall (5 ms)
+[ RUN      ] DarwinFixture.Darwin_enemy_friendly
+[       OK ] DarwinFixture.Darwin_enemy_friendly (4 ms)
+[ RUN      ] DarwinFixture.Darwin_run1
+[       OK ] DarwinFixture.Darwin_run1 (60 ms)
+[ RUN      ] DarwinFixture.Darwin_run2
+[       OK ] DarwinFixture.Darwin_run2 (12 ms)
+[ RUN      ] DarwinFixture.Darwin_run3
+[       OK ] DarwinFixture.Darwin_run3 (11 ms)
+[ RUN      ] DarwinFixture.Darwin_print1
+[       OK ] DarwinFixture.Darwin_print1 (6 ms)
+[ RUN      ] DarwinFixture.Darwin_print2
+[       OK ] DarwinFixture.Darwin_print2 (7 ms)
+[ RUN      ] DarwinFixture.Darwin_print3
+[       OK ] DarwinFixture.Darwin_print3 (8 ms)
+[ RUN      ] DarwinFixture.Creature_default_constructor
+[       OK ] DarwinFixture.Creature_default_constructor (5 ms)
+[ RUN      ] DarwinFixture.Creature_constructor
+[       OK ] DarwinFixture.Creature_constructor (4 ms)
+[ RUN      ] DarwinFixture.Creature_turn_left
+[       OK ] DarwinFixture.Creature_turn_left (7 ms)
+[ RUN      ] DarwinFixture.Creature_turn_right
+[       OK ] DarwinFixture.Creature_turn_right (8 ms)
+[ RUN      ] DarwinFixture.Creature_turn_left_and_right
+[       OK ] DarwinFixture.Creature_turn_left_and_right (4 ms)
+[ RUN      ] DarwinFixture.Creature_infect
+[       OK ] DarwinFixture.Creature_infect (5 ms)
+[ RUN      ] DarwinFixture.Creature_infect_friendly
+[       OK ] DarwinFixture.Creature_infect_friendly (4 ms)
+[ RUN      ] DarwinFixture.Creature_infect_nullptr
+[       OK ] DarwinFixture.Creature_infect_nullptr (3 ms)
+[ RUN      ] DarwinFixture.Creature_enemy
+[       OK ] DarwinFixture.Creature_enemy (4 ms)
+[ RUN      ] DarwinFixture.Creature_enemy_friendly
+[       OK ] DarwinFixture.Creature_enemy_friendly (4 ms)
+[ RUN      ] DarwinFixture.Creature_enemy_nullptr
+[       OK ] DarwinFixture.Creature_enemy_nullptr (3 ms)
+[ RUN      ] DarwinFixture.Creature_next_east
+[       OK ] DarwinFixture.Creature_next_east (3 ms)
+[ RUN      ] DarwinFixture.Creature_next_south
+[       OK ] DarwinFixture.Creature_next_south (4 ms)
+[ RUN      ] DarwinFixture.Creature_next_north
+[       OK ] DarwinFixture.Creature_next_north (3 ms)
+[ RUN      ] DarwinFixture.Creature_next_west
+[       OK ] DarwinFixture.Creature_next_west (4 ms)
+[ RUN      ] DarwinFixture.Creature_print1
+[       OK ] DarwinFixture.Creature_print1 (4 ms)
+[ RUN      ] DarwinFixture.Creature_print2
+[       OK ] DarwinFixture.Creature_print2 (3 ms)
+[ RUN      ] DarwinFixture.Creature_print3
+[       OK ] DarwinFixture.Creature_print3 (3 ms)
+[ RUN      ] DarwinFixture.Species_constructor
+[       OK ] DarwinFixture.Species_constructor (7 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_hop
+[       OK ] DarwinFixture.Species_execute_instruction_hop (8 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_left
+[       OK ] DarwinFixture.Species_execute_instruction_left (8 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_right
+[       OK ] DarwinFixture.Species_execute_instruction_right (7 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_infect
+[       OK ] DarwinFixture.Species_execute_instruction_infect (7 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_go
+[       OK ] DarwinFixture.Species_execute_instruction_go (4 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_random
+[       OK ] DarwinFixture.Species_execute_instruction_random (9 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_random_false
+[       OK ] DarwinFixture.Species_execute_instruction_random_false (7 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_empty
+[       OK ] DarwinFixture.Species_execute_instruction_empty (5 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_empty_false
+[       OK ] DarwinFixture.Species_execute_instruction_empty_false (5 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_wall
+[       OK ] DarwinFixture.Species_execute_instruction_wall (5 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_wall_false
+[       OK ] DarwinFixture.Species_execute_instruction_wall_false (4 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_enemy
+[       OK ] DarwinFixture.Species_execute_instruction_enemy (5 ms)
+[ RUN      ] DarwinFixture.Species_execute_instruction_enemy_false
+[       OK ] DarwinFixture.Species_execute_instruction_enemy_false (4 ms)
+[ RUN      ] DarwinFixture.Species_print1
+[       OK ] DarwinFixture.Species_print1 (4 ms)
+[ RUN      ] DarwinFixture.Species_print2
+[       OK ] DarwinFixture.Species_print2 (4 ms)
+[ RUN      ] DarwinFixture.Species_print3
+[       OK ] DarwinFixture.Species_print3 (4 ms)
+[----------] 63 tests from DarwinFixture (536 ms total)
+
+[----------] Global test environment tear-down
+[==========] 63 tests from 1 test case ran. (593 ms total)
+[  PASSED  ] 63 tests.
+==6751== 
+==6751== HEAP SUMMARY:
+==6751==     in use at exit: 72,704 bytes in 1 blocks
+==6751==   total heap usage: 2,649 allocs, 2,648 frees, 280,658 bytes allocated
+==6751== 
+==6751== LEAK SUMMARY:
+==6751==    definitely lost: 0 bytes in 0 blocks
+==6751==    indirectly lost: 0 bytes in 0 blocks
+==6751==      possibly lost: 0 bytes in 0 blocks
+==6751==    still reachable: 72,704 bytes in 1 blocks
+==6751==         suppressed: 0 bytes in 0 blocks
+==6751== Rerun with --leak-check=full to see details of leaked memory
+==6751== 
+==6751== For counts of detected and suppressed errors, rerun with: -v
+==6751== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:100.00% of 126
+Branches executed:92.45% of 159
+Taken at least once:71.07% of 159
+Calls executed:85.71% of 147
+Creating 'Darwin.c++.gcov'
